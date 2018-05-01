@@ -16,6 +16,8 @@ maxLength=50;
 Ez(1:maxLength,  1:maxLength)   = 0;
 Hx(1:maxLength,  1:maxLength-1) = 0;
 Hy(1:maxLength-1,1:maxLength)   = 0;
+ep(1:maxLength,  1:maxLength)   = 0;
+mu(1:maxLength-1,1:maxLength)   = 0;
 
 % Calculate Update Factor
 HxUpFacy = dt/(mu0*dy);
