@@ -11,17 +11,25 @@
 \maketitle
 \section{Theory}
 \subsection{PML}
-Perfectly Matched Layer (PML) boundary conditions are absorbing boundary conditions. PML BCs decay the wave within a boundary layer at the edge of the simulation. The edge of the simulation BC can be implemented as PEC. Well-implemented PML BCs completely decay the wave from the time it enters the boundary layer to the time after it reflects and attempts to leave.
+Perfectly Matched Layer (PML) boundary conditions are absorbing boundary
+conditions. PML BCs decay the wave within a boundary layer at the edge of the
+simulation. The edge of the simulation BC can be implemented as PEC.
+Well-implemented PML BCs completely decay the wave from the time it enters the
+boundary layer to the time after it reflects and attempts to leave.
 
 \subsection{Graded Conductivity}
 
-
+Reflection Factor
+$R(\theta)=\exp^{-2\eta cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx}$
+Where $\sigma_{x}$ is 
 
 \section{Code}
 
 
 \section{Error Analysis}
 Insert Error Analysis Here
+
+PMLs are exact for continuous functions, but error is introduced for discrete functions. Having a large step discontinuity can 
 
 \section{Fix me: Bibliography}
 Susan's book - third edition
