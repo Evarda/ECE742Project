@@ -22,21 +22,30 @@ boundary layer to the time after it reflects and attempts to leave.
 Reflection Factor
 \[R(\theta)=\exp^{-2\eta cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
 
-Where $\sigma_{x}$ is the graded conductivity of the PML layer material.
+  Where $\sigma_{x}$ is the graded conductivity of the PML material.\\
+  $\theta$ is the angle of incidence of the wave. So steeper angles of $\theta$
+  will result in higher values of reflection error.\\
 We want to minimize relfection R but also make sure the wave decays completely
 in the PML boundary layer.
 
 We are going to compare the error for different types of grading profiles.
+And/or we can use different values in the grading profile 
 
 \subsubsection{Polynomial grading}
 Where the graded conductivity is:
 \[\sigma_{x} = (\frac{x}{d})^{m} \sigma_{x,max}\]
 And the graded value for $\kappa_{x}$ is:
 \[\kappa_{x}=1+(\kappa_{x,max}-1)(\frac{x}{d})^{m}\]
+Reflection factor simplifies to 
 
 \subsubsection{Geometric grading}
 Where the graded conductivity is:
 \[\sigma_{x} =(g^{\frac{1}{\Delta}})^{x} \sigma_{x,0}\]
+
+$\sigma_{x,0}$ is the conductivity at the surface of the PML.\\
+g is a scaling factor. Nearly optimal: $2 \leq g \leq 3$\\
+$\Delta$ is spacing of FDTD lattice.\\
+
 And the graded value for $\kappa_{x}$ is:
 \[\kappa_{x}=[(\kappa_{max})^{\frac{1}{d}}g^{\frac{1}{\Delta}}]^{x}\]
 
@@ -46,7 +55,12 @@ And the graded value for $\kappa_{x}$ is:
 \section{Error Analysis}
 Insert Error Analysis Here
 
-PMLs are exact for continuous functions, but error is introduced for discrete functions. Having a large step discontinuity can 
+PMLs are exact for continuous functions, but error is introduced for discrete
+functions. Having a large step discontinuity can
+
+\subsubsection{Error of Polynomial Grading}
+
+\subsubsection{Error of Geometric Grading}
 
 \section{Fix me: Bibliography}
 Susan's book - third edition
