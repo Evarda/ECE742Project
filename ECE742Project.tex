@@ -20,8 +20,25 @@ boundary layer to the time after it reflects and attempts to leave.
 \subsection{Graded Conductivity}
 
 Reflection Factor
-$R(\theta)=\exp^{-2\eta cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx}$
-Where $\sigma_{x}$ is 
+\[R(\theta)=\exp^{-2\eta cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
+
+Where $\sigma_{x}$ is the graded conductivity of the PML layer material.
+We want to minimize relfection R but also make sure the wave decays completely
+in the PML boundary layer.
+
+We are going to compare the error for different types of grading profiles.
+
+\subsubsection{Polynomial grading}
+Where the graded conductivity is:
+\[\sigma_{x} = (\frac{x}{d})^{m} \sigma_{x,max}\]
+And the graded value for $\kappa_{x}$ is:
+\[\kappa_{x}=1+(\kappa_{x,max}-1)(\frac{x}{d})^{m}\]
+
+\subsubsection{Geometric grading}
+Where the graded conductivity is:
+\[\sigma_{x} =(g^{\frac{1}{\Delta}})^{x} \sigma_{x,0}\]
+And the graded value for $\kappa_{x}$ is:
+\[\kappa_{x}=[(\kappa_{max})^{\frac{1}{d}}g^{\frac{1}{\Delta}}]^{x}\]
 
 \section{Code}
 
