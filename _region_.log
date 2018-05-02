@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=prv_ECE742Project 2018.5.2)  2 MAY 2018 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=prv_ECE742Project 2018.5.2)  2 MAY 2018 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10,66 +10,71 @@ CUSTOMISED FORMAT. Preloaded files:
         .
  article.cls    2014/09/29 v1.4h Standard LaTeX document class
   size10.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
+ amsmath.sty    2016/11/05 v2.16a AMS math features
+ amstext.sty    2000/06/29 v2.01 AMS text
+  amsgen.sty    1999/11/30 v2.0 generic functions
+  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
+  amsopn.sty    2016/03/08 v2.02 operator names
         .
 No file _region_.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 (/Users/michellelking/.emacs.d/elpa/auctex-12.1.1/latex/preview.sty
 Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/luatex85/luatex85.sty
 Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 ) (/Users/michellelking/.emacs.d/elpa/auctex-12.1.1/latex/prtightpage.def
-\PreviewBorder=\dimen103
+\PreviewBorder=\dimen112
 ) (/Users/michellelking/.emacs.d/elpa/auctex-12.1.1/latex/prauctex.def
 No auxiliary output files.
 
 
-\hbadness=\count87
-\hfuzz=\dimen104
+\hbadness=\count99
+\hfuzz=\dimen113
 (/Users/michellelking/.emacs.d/elpa/auctex-12.1.1/latex/prauctex.cfg)) (/Users/michellelking/.emacs.d/elpa/auctex-12.1.1/latex/prfootnotes.def)
-\pr@snippet=\count88
-\pr@box=\box26
-\pr@output=\toks14
+\pr@snippet=\count100
+\pr@box=\box28
+\pr@output=\toks19
 
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
-)  !name(ECE742Project.tex) !offset(29) 
+)  !name(ECE742Project.tex) !offset(7) 
 ! Preview: Snippet 1 started.
 <-><->
       
-l.14 g is a scaling factor. Nearly optimal: $
-                                             2 \leq g \leq 3$
+l.16 \[
+       \nabla \times \vec{H} = j \omega \epsilon \bar{\bar{s}} \vec{E}\]
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(422343+127431x2739073).
+! Preview: Snippet 1 ended.(761309+0x13631237).
 <-><->
       
-l.14 ... factor. Nearly optimal: $2 \leq g \leq 3$
+l.16 ... j \omega \epsilon \bar{\bar{s}} \vec{E}\]
                                                   
 Not a real error.
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]  !name(ECE742Project.tex) !offset(47)  ) 
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]  !name(ECE742Project.tex) !offset(80)  ) 
 Here is how much of TeX's memory you used:
- 183 strings out of 492762
- 2826 string characters out of 6129807
- 56022 words of memory out of 5000000
- 4015 multiletter control sequences out of 15000+600000
- 5723 words of font info for 21 fonts, out of 8000000 for 9000
+ 181 strings out of 492148
+ 2813 string characters out of 6122802
+ 66609 words of memory out of 5000000
+ 4610 multiletter control sequences out of 15000+600000
+ 6177 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 22i,4n,24p,170b,112s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 22i,7n,24p,170b,147s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on _region_.pdf (1 page, 23556 bytes).
+Output written on _region_.pdf (1 page, 24634 bytes).
 PDF statistics:
  20 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream

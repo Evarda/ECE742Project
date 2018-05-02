@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{amsmath}
 
 \title{ECE 742 Final Project}
 \author{
@@ -16,6 +17,39 @@ conditions. PML BCs decay the wave within a boundary layer at the edge of the
 simulation. The edge of the simulation BC can be implemented as PEC.
 Well-implemented PML BCs completely decay the wave from the time it enters the
 boundary layer to the time after it reflects and attempts to leave.
+
+\subsection{Finite-Difference Derivation}
+Let's start with equation:
+\[\nabla \times \vec{H} = j \omega \epsilon \bar{\bar{s}} \vec{E}\]
+Evaluate the cross product and write in matrix form:
+\[
+  $
+  \begin{bmatrix}
+    \frac{\delta H_{z}}{\delta y}-\frac{\delta H_{y}}{\delta z} \\
+    \frac{\delta H_{x}}{\delta z}-\frac{\delta H_{z}}{\delta x} \\
+    \frac{\delta H_{y}}{\delta x}-\frac{\delta H_{x}}{\delta y}
+  \end{bmatrix}
+  =
+  j\omega\epsilon
+  \begin{bmatrix}
+    \frac{s_{y}s_{z}}{s_{x}} & 0                       & 0                       \\
+    0                       & \frac{s_{x}s_{z}}{s_{y}} & 0                       \\
+    0                       & 0                       & \frac{s_{x}s_{y}}{s_{z}} \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    E_{x} \\
+    E_{y} \\
+    E_{z}
+  \end{bmatrix}
+  $
+\]
+Where the values in the second rank tensor can be described by:
+\[s_{x}=\kappa_{x}+\frac{\sigma_{x}}{j\omega\epsilon_{0}}\]
+\[s_{y}=\kappa_{y}+\frac{\sigma_{y}}{j\omega\epsilon_{0}}\]
+\[s_{z}=\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}}\]
+
+
+
 
 \subsection{Graded Conductivity}
 
