@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1525300902 "ECE742Project.tex" "ECE742Project.pdf" "ECE742Project" 1525300902
+["pdflatex"] 1525303550 "ECE742Project.tex" "ECE742Project.pdf" "ECE742Project" 1525303550
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -41,9 +41,9 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "ECE742Project.aux" 1525300786 927 0206b051ffeb84be387595d9466d9cec ""
-  "ECE742Project.tex" 1525300897 3195 02026ca612f865f3c56c0eb58a57812d ""
+  "ECE742Project.aux" 1525303535 927 57b8cbc7c3eab79b0825ee9b29efc0fa ""
+  "ECE742Project.tex" 1525303549 4992 f413590d3953f6d2217ffff321d5db63 ""
   (generated)
-  "ECE742Project.aux"
   "ECE742Project.log"
   "ECE742Project.pdf"
+  "ECE742Project.aux"

@@ -10,12 +10,32 @@
 
 \begin{document}
 
-\message{ !name(ECE742Project.tex) !offset(7) }
+\message{ !name(ECE742Project.tex) !offset(9) }
 
-Let's start with equation:
-\[\nabla \times \vec{H} = j \omega \epsilon \bar{\bar{s}} \vec{E}\]
 Evaluate the cross product and write in matrix form:
+\[
+  $
+  \begin{bmatrix}
+    \frac{\partial H_{z}}{\partial y}-\frac{\partial H_{y}}{\partial z} \\
+    \frac{\partial H_{x}}{\partial z}-\frac{\partial H_{z}}{\partial x} \\
+    \frac{\partial H_{y}}{\partial x}-\frac{\partial H_{x}}{\partial y}
+  \end{bmatrix}
+  =
+  j\omega\epsilon
+  \begin{bmatrix}
+    \frac{s_{y}s_{z}}{s_{x}} & 0                       & 0                       \\
+    0                       & \frac{s_{x}s_{z}}{s_{y}} & 0                       \\
+    0                       & 0                       & \frac{s_{x}s_{y}}{s_{z}} \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    E_{x} \\
+    E_{y} \\
+    E_{z}
+  \end{bmatrix}
+  $
+\]
+Where the values in the second rank tensor can be described by:
 
-\message{ !name(ECE742Project.tex) !offset(80) }
+\message{ !name(ECE742Project.tex) !offset(123) }
 
 \end{document}
