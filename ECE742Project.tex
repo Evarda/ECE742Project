@@ -115,6 +115,43 @@ Using the defined values of s and that $\frac{\partial}{\partial t} = j \omega $
 \\
 \\
 Discretize to find D\\
+Discretized at point i,j,k
+\[
+  $
+  \begin{bmatrix}
+    \frac{H_{z}^{n+1/2}(i,j+1,k)-H_{z}^{n+1/2}(i,j,k)}{\Delta_{y}}-\frac{H_{y}^{n+1/2}(i,j,k+1)-H_{y}^{n+1/2}(i,j,k)}{\Delta_{z}} \\
+    \frac{H_{x}^{n+1/2}(i,j,k+1)-H_{x}^{n+1/2}(i,j,k)}{\Delta_{z}}-\frac{H_{z}^{n+1/2}(i+1,j,k)-H_{z}^{n+1/2}(i,j,k)}{\Delta_{x}} \\
+    \frac{H_{y}^{n+1/2}(i+1,j,k)-H_{y}^{n+1/2}(i,j,k)}{\Delta_{x}}-\frac{H_{x}^{n+1/2}(i,j+1,k)-H_{x}^{n+1/2}(i,j,k)}{\Delta_{y}}
+  \end{bmatrix}
+  $
+  =
+  $
+  \begin{bmatrix}
+    \kappa_{y}  & 0           & 0           \\
+    0           & \kappa_{z}  & 0           \\
+    0           & 0           & \kappa_{x}  \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    D_{x}^{n+1}-D_{x}^{n} \\
+    D_{y}^{n+1}-D_{y}^{n} \\
+    D_{z}^{n+1}-D_{z}^{n}
+  \end{bmatrix}
+  $
+  +\frac{1}{\epsilon_{0}}
+  $
+  \begin{bmatrix}
+    \sigma_{y}  & 0           & 0           \\
+    0           & \sigma_{z}  & 0           \\
+    0           & 0           & \sigma_{x}  \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    D_{x}^{n} \\
+    D_{y}^{n} \\
+    D_{z}^{n}
+  \end{bmatrix}
+  $
+\]
+
 Update Components for D\\
 Update Components for E\\
 \\
