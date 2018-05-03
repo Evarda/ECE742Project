@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 MAY 2018 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 MAY 2018 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -375,15 +375,134 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+./ECE742Project.tex:120: Display math should end with $$.
+<to be read again> 
+                    
+l.120   $
+         
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--123
+./ECE742Project.tex:121: Missing $ inserted.
+<inserted text> 
+                $
+l.121   \begin{bmatrix}
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:125: Missing $ inserted.
+<inserted text> 
+                $
+l.125   \end{bmatrix}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:129: Missing $ inserted.
+<inserted text> 
+                $
+l.129   \begin{bmatrix}
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:133: Missing $ inserted.
+<inserted text> 
+                $
+l.133   \end{bmatrix}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:134: Missing $ inserted.
+<inserted text> 
+                $
+l.134   \begin{bmatrix}
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:138: Missing $ inserted.
+<inserted text> 
+                $
+l.138   \end{bmatrix}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:142: Missing $ inserted.
+<inserted text> 
+                $
+l.142   \begin{bmatrix}
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:146: Missing $ inserted.
+<inserted text> 
+                $
+l.146   \end{bmatrix}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:147: Missing $ inserted.
+<inserted text> 
+                $
+l.147   \begin{bmatrix}
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:151: Missing $ inserted.
+<inserted text> 
+                $
+l.151   \end{bmatrix}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:153: Missing $ inserted.
+<inserted text> 
+                $
+l.153 \]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (58.31476pt too wide) in paragraph at lines 120--154
+$[]$ $\OT1/cmr/m/n/10 =$ $[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
 
  []
 
-./ECE742Project.tex:127: Missing } inserted.
+./ECE742Project.tex:164: Missing } inserted.
 <inserted text> 
                 }
-l.127 ... cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
+l.164 ... cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -392,7 +511,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
 
  []
 
@@ -400,7 +519,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--152
 Here is how much of TeX's memory you used:
  847 strings out of 492995
  9571 string characters out of 6132704
- 72244 words of memory out of 5000000
+ 76244 words of memory out of 5000000
  4456 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -420,7 +539,7 @@ ts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y7.pfb>
-Output written on ECE742Project.pdf (3 pages, 149679 bytes).
+Output written on ECE742Project.pdf (3 pages, 152518 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream

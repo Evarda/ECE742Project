@@ -10,9 +10,8 @@
 
 \begin{document}
 
-\message{ !name(ECE742Project.tex) !offset(9) }
-
-Evaluate the cross product and write in matrix form:
+\message{ !name(ECE742Project.tex) !offset(63) }
+:
 \[
   $
   \begin{bmatrix}
@@ -20,22 +19,47 @@ Evaluate the cross product and write in matrix form:
     \frac{\partial H_{x}}{\partial z}-\frac{\partial H_{z}}{\partial x} \\
     \frac{\partial H_{y}}{\partial x}-\frac{\partial H_{x}}{\partial y}
   \end{bmatrix}
+  $
   =
-  j\omega\epsilon
+  \frac{\partial}{\partial t}
+  $
   \begin{bmatrix}
-    \frac{s_{y}s_{z}}{s_{x}} & 0                       & 0                       \\
-    0                       & \frac{s_{x}s_{z}}{s_{y}} & 0                       \\
-    0                       & 0                       & \frac{s_{x}s_{y}}{s_{z}} \\
+    \kappa_{y}  & 0           & 0           \\
+    0           & \kappa_{z}  & 0           \\
+    0           & 0           & \kappa_{x}  \\
   \end{bmatrix}
   \begin{bmatrix}
-    E_{x} \\
-    E_{y} \\
-    E_{z}
+    D_{x} \\
+    D_{y} \\
+    D_{z}
+  \end{bmatrix}
+  $
+  +\frac{1}{\epsilon_{0}}
+  $
+  \begin{bmatrix}
+    \sigma_{y}  & 0           & 0           \\
+    0           & \sigma_{z}  & 0           \\
+    0           & 0           & \sigma_{x}  \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    D_{x} \\
+    D_{y} \\
+    D_{z}
   \end{bmatrix}
   $
 \]
-Where the values in the second rank tensor can be described by:
 
-\message{ !name(ECE742Project.tex) !offset(123) }
+\\
+\\
+Discretize to find D\\
+
+Update Components for D\\
+Update Components for E\\
+\\
+Update Components for B\\
+Update Components for H
+
+
+\message{ !name(ECE742Project.tex) !offset(108) }
 
 \end{document}
