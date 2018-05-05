@@ -8,6 +8,8 @@
     "amsmath"
     "mathtools")
    (LaTeX-add-labels
+    "SyEquation"
+    "SzEquation"
     "DzEzRelation"))
  :latex)
 

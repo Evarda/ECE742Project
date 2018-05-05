@@ -46,8 +46,8 @@ Evaluate the cross product and write in matrix form:
 \end{equation}
 Where the values in the second rank tensor can be described by:
 \begin{equation}s_{x}=\kappa_{x}+\frac{\sigma_{x}}{j\omega\epsilon_{0}}\end{equation}
-\begin{equation}s_{y}=\kappa_{y}+\frac{\sigma_{y}}{j\omega\epsilon_{0}}\end{equation}
-\begin{equation}s_{z}=\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}}\end{equation}
+\begin{equation}s_{y}=\kappa_{y}+\frac{\sigma_{y}}{j\omega\epsilon_{0}}\label{SyEquation}\end{equation}
+\begin{equation}s_{z}=\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}}\label{SzEquation}\end{equation}
 To make the calculation computationally more managable, we can define the following
 relations:
 \begin{equation}D_{x}=\epsilon \frac{s_{z}}{s_{x}}E_{x}\end{equation}
@@ -213,6 +213,9 @@ This equation discretizes to:
  Start with rewriting \ref{DzEzRelation}:
  \begin{equation}s_{z}D_{z}=\epsilon s_{y}E_{z}\end{equation}
 
+ Using \ref{SyEquation} and \ref{SzEquation}:
+
+ \begin{equation}(=\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}})D_{z}=\epsilon (\kappa_{y}+\frac{\sigma_{y}}{j\omega\epsilon_{0}})E_{z}\end{equation}
  
 \\
 Update Components for B\\
