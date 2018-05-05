@@ -5,6 +5,9 @@
     "latex2e"
     "article"
     "art10"
-    "amsmath"))
+    "amsmath"
+    "mathtools")
+   (LaTeX-add-labels
+    "DzEzRelation"))
  :latex)
 

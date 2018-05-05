@@ -1,5 +1,6 @@
 \message{ !name(ECE742Project.tex)}\documentclass{article}
 \usepackage{amsmath}
+\usepackage{mathtools}
 
 \title{ECE 742 Final Project}
 \author{
@@ -10,31 +11,31 @@
 
 \begin{document}
 
-\message{ !name(ECE742Project.tex) !offset(40) }
+\message{ !name(ECE742Project.tex) !offset(172) }
 
-such that now:
-\[
-  $
-  \begin{bmatrix}
-    \frac{\partial H_{z}}{\partial y}-\frac{\partial H_{y}}{\partial z} \\
-    \frac{\partial H_{x}}{\partial z}-\frac{\partial H_{z}}{\partial x} \\
-    \frac{\partial H_{y}}{\partial x}-\frac{\partial H_{x}}{\partial y}
-  \end{bmatrix}
-  =
-  j\omega
-  \begin{bmatrix}
-    s_{y}  & 0      & 0     \\
-    0      & s_{z}  & 0     \\
-    0      & 0     & s_{x}  \\
-  \end{bmatrix}
-  \begin{bmatrix}
-    D_{x} \\
-    D_{y} \\
-    D_{z}
-  \end{bmatrix}
-  $
-\]
-Using the defined values of s and that 
-\message{ !name(ECE742Project.tex) !offset(215) }
+
+\begin{equation}
+\begin{multlined}
+  \frac{1}{\Delta_{x}}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
+ -\frac{1}{\Delta_{y}}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))= \\
+  (\frac{\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x}}{2\epsilon_{0}\Delta t})D_{z}^{n+1}(i,j)+
+  (\frac{\sigma_{x}\Delta t-2\epsilon_{0}\kappa_{x}}{2\epsilon_{0}\Delta t})D_{z}^{n}(i,j)
+\end{multlined}
+\end{equation}
+
+\begin{equation}
+\begin{multlined}
+  D_{z}^{n+1}(i,j) = -\frac{\sigma_{x}\Deltat-2\epsilon_{0}\kappa_{x}}{\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x}}D_{z}^{n}(i,j) \\
+  +\frac{2\epsilon_{0}\Delta t}{\Delta_{x}(\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x})}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
+ -\frac{2\epsilon_{0}\Delta t}{\Delta_{y}(\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x})}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))
+\end{multlined}
+\end{equation}
+
+ 
+ Update Components for E\\
+
+ Start with rewriting \ref{DzEzRelation}:
+ 
+\message{ !name(ECE742Project.tex) !offset(224) }
 
 \end{document}

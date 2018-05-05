@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAY 2018 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAY 2018 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -82,42 +82,169 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count99
+\calc@Bcount=\count100
+\calc@Adimen=\dimen112
+\calc@Bdimen=\dimen113
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count101
+\calc@Cskip=\skip48
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count102
+\l_MT_multwidth_dim=\dimen114
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen115
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen116
+\l_MT_above_intertext_sep=\dimen117
+\l_MT_below_intertext_sep=\dimen118
+\l_MT_above_shortintertext_sep=\dimen119
+\l_MT_below_shortintertext_sep=\dimen120
+)
 (./ECE742Project.aux)
 \openout1 = `ECE742Project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
-./ECE742Project.tex:26: Display math should end with $$.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count103
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen121
+\scratchbox=\box28
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen122
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks21
+))) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
+)
+./ECE742Project.tex:27: Display math should end with $$.
 <to be read again> 
                     
-l.26   $
+l.27   $
         
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-./ECE742Project.tex:27: Missing $ inserted.
+./ECE742Project.tex:28: Missing $ inserted.
 <inserted text> 
                 $
-l.27   \begin{bmatrix}
+l.28   \begin{bmatrix}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./ECE742Project.tex:31: Missing $ inserted.
+./ECE742Project.tex:32: Missing $ inserted.
 <inserted text> 
                 $
-l.31   \end{bmatrix}
+l.32   \end{bmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -125,69 +252,79 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:33: Missing $ inserted.
+./ECE742Project.tex:34: Missing $ inserted.
 <inserted text> 
                 $
-l.33   j\omega
+l.34   j\omega
               \epsilon
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./ECE742Project.tex:45: LaTeX Error: Bad math environment delimiter.
+./ECE742Project.tex:46: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 \]
-       
+l.46 \end{equation}
+                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./ECE742Project.tex:45: Missing $ inserted.
+./ECE742Project.tex:46: You can't use `\eqno' in horizontal mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.46 \end{equation}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./ECE742Project.tex:46: Missing $ inserted.
 <inserted text> 
                 $
-l.45 \]
-       
+l.46 \end{equation}
+                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:45: Display math should end with $$.
+./ECE742Project.tex:46: Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.45 \]
-       
+l.46 \end{equation}
+                   
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-./ECE742Project.tex:57: Display math should end with $$.
+./ECE742Project.tex:58: Display math should end with $$.
 <to be read again> 
                     
-l.57   $
+l.58   $
         
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-./ECE742Project.tex:58: Missing $ inserted.
+./ECE742Project.tex:59: Missing $ inserted.
 <inserted text> 
                 $
-l.58   \begin{bmatrix}
+l.59   \begin{bmatrix}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./ECE742Project.tex:62: Missing $ inserted.
+./ECE742Project.tex:63: Missing $ inserted.
 <inserted text> 
                 $
-l.62   \end{bmatrix}
+l.63   \end{bmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -195,66 +332,76 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:64: Missing $ inserted.
+./ECE742Project.tex:65: Missing $ inserted.
 <inserted text> 
                 $
-l.64   j\omega
+l.65   j\omega
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./ECE742Project.tex:76: LaTeX Error: Bad math environment delimiter.
+./ECE742Project.tex:77: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 \]
-       
+l.77 \end{equation}
+                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./ECE742Project.tex:76: Missing $ inserted.
+./ECE742Project.tex:77: You can't use `\eqno' in horizontal mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.77 \end{equation}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./ECE742Project.tex:77: Missing $ inserted.
 <inserted text> 
                 $
-l.76 \]
-       
+l.77 \end{equation}
+                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:76: Display math should end with $$.
+./ECE742Project.tex:77: Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.76 \]
-       
+l.77 \end{equation}
+                   
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-./ECE742Project.tex:79: Display math should end with $$.
+./ECE742Project.tex:80: Display math should end with $$.
 <to be read again> 
                     
-l.79   $
+l.80   $
         
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-./ECE742Project.tex:80: Missing $ inserted.
+./ECE742Project.tex:81: Missing $ inserted.
 <inserted text> 
                 $
-l.80   \begin{bmatrix}
+l.81   \begin{bmatrix}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./ECE742Project.tex:84: Missing $ inserted.
+./ECE742Project.tex:85: Missing $ inserted.
 <inserted text> 
                 $
-l.84   \end{bmatrix}
+l.85   \end{bmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -262,37 +409,37 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:89: Missing $ inserted.
+./ECE742Project.tex:90: Missing $ inserted.
 <inserted text> 
                 $
-l.89   \begin{bmatrix}
+l.90   \begin{bmatrix}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:93: Missing $ inserted.
-<inserted text> 
-                $
-l.93   \end{bmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 ./ECE742Project.tex:94: Missing $ inserted.
 <inserted text> 
                 $
-l.94   \begin{bmatrix}
+l.94   \end{bmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95   \begin{bmatrix}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./ECE742Project.tex:98: Missing $ inserted.
+./ECE742Project.tex:99: Missing $ inserted.
 <inserted text> 
                 $
-l.98   \end{bmatrix}
+l.99   \end{bmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -300,37 +447,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:102: Missing $ inserted.
+./ECE742Project.tex:103: Missing $ inserted.
 <inserted text> 
                 $
-l.102   \begin{bmatrix}
+l.103   \begin{bmatrix}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:106: Missing $ inserted.
-<inserted text> 
-                $
-l.106   \end{bmatrix}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 ./ECE742Project.tex:107: Missing $ inserted.
 <inserted text> 
                 $
-l.107   \begin{bmatrix}
-                       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:111: Missing $ inserted.
-<inserted text> 
-                $
-l.111   \end{bmatrix}
+l.107   \end{bmatrix}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -338,37 +466,66 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:113: Missing $ inserted.
+./ECE742Project.tex:108: Missing $ inserted.
 <inserted text> 
                 $
-l.113 \]
-        
+l.108   \begin{bmatrix}
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:112: Missing $ inserted.
+<inserted text> 
+                $
+l.112   \end{bmatrix}
+                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:119: Display math should end with $$.
+./ECE742Project.tex:114: You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.114 \end{equation}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./ECE742Project.tex:114: Missing $ inserted.
+<inserted text> 
+                $
+l.114 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:120: Display math should end with $$.
 <to be read again> 
                     
-l.119   $
+l.120   $
          
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-./ECE742Project.tex:120: Missing $ inserted.
+./ECE742Project.tex:121: Missing $ inserted.
 <inserted text> 
                 $
-l.120   \begin{bmatrix}
+l.121   \begin{bmatrix}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./ECE742Project.tex:124: Missing $ inserted.
+./ECE742Project.tex:125: Missing $ inserted.
 <inserted text> 
                 $
-l.124   \end{bmatrix}
+l.125   \end{bmatrix}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -376,37 +533,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:129: Missing $ inserted.
+./ECE742Project.tex:130: Missing $ inserted.
 <inserted text> 
                 $
-l.129   \begin{bmatrix}
+l.130   \begin{bmatrix}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:133: Missing $ inserted.
-<inserted text> 
-                $
-l.133   \end{bmatrix}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 ./ECE742Project.tex:134: Missing $ inserted.
 <inserted text> 
                 $
-l.134   \begin{bmatrix}
-                       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:138: Missing $ inserted.
-<inserted text> 
-                $
-l.138   \end{bmatrix}
+l.134   \end{bmatrix}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -414,37 +552,37 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:142: Missing $ inserted.
+./ECE742Project.tex:135: Missing $ inserted.
 <inserted text> 
                 $
-l.142   \begin{bmatrix}
+l.135   \begin{bmatrix}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./ECE742Project.tex:146: Missing $ inserted.
+./ECE742Project.tex:139: Missing $ inserted.
 <inserted text> 
                 $
-l.146   \end{bmatrix}
+l.139   \end{bmatrix}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:143: Missing $ inserted.
+<inserted text> 
+                $
+l.143   \begin{bmatrix}
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 ./ECE742Project.tex:147: Missing $ inserted.
 <inserted text> 
                 $
-l.147   \begin{bmatrix}
-                       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:151: Missing $ inserted.
-<inserted text> 
-                $
-l.151   \end{bmatrix}
+l.147   \end{bmatrix}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -452,11 +590,40 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./ECE742Project.tex:153: Missing $ inserted.
+./ECE742Project.tex:148: Missing $ inserted.
 <inserted text> 
                 $
-l.153 \]
-        
+l.148   \begin{bmatrix}
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:152: Missing $ inserted.
+<inserted text> 
+                $
+l.152   \end{bmatrix}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:154: You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.154 \end{equation}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./ECE742Project.tex:154: Missing $ inserted.
+<inserted text> 
+                $
+l.154 \end{equation}
+                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -464,22 +631,22 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 [2]
-./ECE742Project.tex:199: Undefined control sequence.
+./ECE742Project.tex:207: Undefined control sequence.
 <argument> \sigma _{x}\Deltat 
                               -2\epsilon _{0}\kappa _{x}
-l.199  \end{multline*}
-                      
+l.207 \end{multlined}
+                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./ECE742Project.tex:199: Undefined control sequence.
+./ECE742Project.tex:207: Undefined control sequence.
 <argument> \sigma _{x}\Deltat 
                               -2\epsilon _{0}\kappa _{x}
-l.199  \end{multline*}
-                      
+l.207 \end{multlined}
+                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -487,14 +654,27 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--206
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-./ECE742Project.tex:210: Missing } inserted.
+
+./ECE742Project.tex:218: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 U
+       pdate Components for B\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./ECE742Project.tex:224: Missing } inserted.
 <inserted text> 
                 }
-l.210 ... cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
+l.224 ... cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -503,19 +683,19 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+Underfull \hbox (badness 10000) in paragraph at lines 246--249
 
  []
 
 [4] (./ECE742Project.aux) ) 
 Here is how much of TeX's memory you used:
- 848 strings out of 492995
- 9577 string characters out of 6132704
- 77244 words of memory out of 5000000
- 4457 multiletter control sequences out of 15000+600000
+ 2647 strings out of 492995
+ 38134 string characters out of 6132704
+ 116706 words of memory out of 5000000
+ 6181 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,9n,20p,209b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,9n,30p,260b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
@@ -531,7 +711,7 @@ ts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y7.pfb>
-Output written on ECE742Project.pdf (4 pages, 154600 bytes).
+Output written on ECE742Project.pdf (4 pages, 156014 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{mathtools}
 
 \title{ECE 742 Final Project}
 \author{
@@ -20,9 +21,9 @@ boundary layer to the time after it reflects and attempts to leave.
 
 \subsection{Finite-Difference Derivation}
 Let's start with equation:
-\[\nabla \times \vec{H} = j \omega \epsilon \bar{\bar{s}} \vec{E}\]
+\begin{equation}\nabla \times \vec{H} = j \omega \epsilon \bar{\bar{s}} \vec{E}\end{equation}
 Evaluate the cross product and write in matrix form:
-\[
+\begin{equation}
   $
   \begin{bmatrix}
     \frac{\partial H_{z}}{\partial y}-\frac{\partial H_{y}}{\partial z} \\
@@ -42,18 +43,18 @@ Evaluate the cross product and write in matrix form:
     E_{z}
   \end{bmatrix}
   $
-\]
+\end{equation}
 Where the values in the second rank tensor can be described by:
-\[s_{x}=\kappa_{x}+\frac{\sigma_{x}}{j\omega\epsilon_{0}}\]
-\[s_{y}=\kappa_{y}+\frac{\sigma_{y}}{j\omega\epsilon_{0}}\]
-\[s_{z}=\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}}\]
+\begin{equation}s_{x}=\kappa_{x}+\frac{\sigma_{x}}{j\omega\epsilon_{0}}\end{equation}
+\begin{equation}s_{y}=\kappa_{y}+\frac{\sigma_{y}}{j\omega\epsilon_{0}}\end{equation}
+\begin{equation}s_{z}=\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}}\end{equation}
 To make the calculation computationally more managable, we can define the following
 relations:
-\[D_{x}=\epsilon \frac{s_{z}}{s_{x}}E_{x}\]
-\[D_{y}=\epsilon \frac{s_{x}}{s_{y}}E_{y}\]
-\[D_{z}=\epsilon \frac{s_{y}}{s_{z}}E_{z}\]
+\begin{equation}D_{x}=\epsilon \frac{s_{z}}{s_{x}}E_{x}\end{equation}
+\begin{equation}D_{y}=\epsilon \frac{s_{x}}{s_{y}}E_{y}\end{equation}
+\begin{equation}D_{z}=\epsilon \frac{s_{y}}{s_{z}}E_{z}\label{DzEzRelation}\end{equation}
 such that now:
-\[
+\begin{equation}
   $
   \begin{bmatrix}
     \frac{\partial H_{z}}{\partial y}-\frac{\partial H_{y}}{\partial z} \\
@@ -73,9 +74,9 @@ such that now:
     D_{z}
   \end{bmatrix}
   $
-\]
+\end{equation}
 Using the defined values of s and that $\frac{\partial}{\partial t} = j \omega $:
-\[
+\begin{equation}
   $
   \begin{bmatrix}
     \frac{\partial H_{z}}{\partial y}-\frac{\partial H_{y}}{\partial z} \\
@@ -110,12 +111,12 @@ Using the defined values of s and that $\frac{\partial}{\partial t} = j \omega $
     D_{z}
   \end{bmatrix}
   $
-\]
+\end{equation}
 
 This has too much info. Since we are doing 2D, $\kappa_{z}=1$, $\sigma_{z}=0$ in
 this simulation. As well as $D_{x}=D_{y}=0$ and $H_{z}=0$. Equation reduces to:
 
-\[
+\begin{equation}
   $
   \begin{bmatrix}
     \frac{\partial H_{z}}{\partial y}-\frac{\partial H_{y}}{\partial z} \\
@@ -150,56 +151,69 @@ this simulation. As well as $D_{x}=D_{y}=0$ and $H_{z}=0$. Equation reduces to:
     D_{z}
   \end{bmatrix}
   $
-\]
+\end{equation}
 
 This leaves us with one equation to find an update quation for  $D_{z}$:
-\[
+\begin{equation}
   \frac{\partial H_{y}}{\partial x}-\frac{\partial H_{x}}{\partial y}=  \kappa_{x}\frac{\partial}{\partial t} D_{z}+\frac{\sigma_{x}}{\epsilon_{0}} D_{z}
-\]
+\end{equation}
 
 
 Using semi-implicit (???)
 
-\[D^{n+1/2}=\frac{D^{n+1}+D^{n}}{2}\]
+\begin{equation}D^{n+1/2}=\frac{D^{n+1}+D^{n}}{2}\end{equation}
 
 If we discretize around point i,j,k at timestep n
 
 This equation discretizes to:
 
-\begin{multline*}
+\begin{equation}
+\begin{multlined}
   \frac{1}{\Delta_{x}}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
  -\frac{1}{\Delta_{y}}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))= \\
   \frac{\kappa_{x}}{\Delta t}
    (D_{z}^{n+1}(i,j)-D_{z}^{n}(i,j))+
    \frac{\sigma_{x}}{2 \epsilon_{0}}
    (D_{z}^{n+1}(i,j)+D_{z}^{n}(i,j))
- \end{multline*}
+\end{multlined}
+\end{equation}
 
 
  We can solve this to find update equation for D:
 
- \begin{multline*}
+\begin{equation}
+\begin{multlined}
   \frac{1}{\Delta_{x}}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
  -\frac{1}{\Delta_{y}}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))= \\
   (\frac{\sigma_{x}}{2\epsilon_{0}}+\frac{\kappa_{x}}{\Delta t})D_{z}^{n+1}(i,j)+
   (\frac{\sigma_{x}}{2\epsilon_{0}}-\frac{\kappa_{x}}{\Delta t})D_{z}^{n}(i,j)
-\end{multline*}
+\end{multlined}
+\end{equation}
 
- \begin{multline*}
+\begin{equation}
+\begin{multlined}
   \frac{1}{\Delta_{x}}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
  -\frac{1}{\Delta_{y}}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))= \\
   (\frac{\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x}}{2\epsilon_{0}\Delta t})D_{z}^{n+1}(i,j)+
   (\frac{\sigma_{x}\Delta t-2\epsilon_{0}\kappa_{x}}{2\epsilon_{0}\Delta t})D_{z}^{n}(i,j)
- \end{multline*}
+\end{multlined}
+\end{equation}
 
- \begin{multline*}
+\begin{equation}
+\begin{multlined}
   D_{z}^{n+1}(i,j) = -\frac{\sigma_{x}\Deltat-2\epsilon_{0}\kappa_{x}}{\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x}}D_{z}^{n}(i,j) \\
   +\frac{2\epsilon_{0}\Delta t}{\Delta_{x}(\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x})}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
  -\frac{2\epsilon_{0}\Delta t}{\Delta_{y}(\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x})}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))
- \end{multline*}
+\end{multlined}
+\end{equation}
 
  
-Update Components for E\\
+ Update Components for E\\
+
+ Start with rewriting \ref{DzEzRelation}:
+ \begin{equation}s_{z}D_{z}=\epsilon s_{y}E_{z}\end{equation}
+
+ 
 \\
 Update Components for B\\
 Update Components for H
