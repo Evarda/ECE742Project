@@ -112,47 +112,93 @@ Using the defined values of s and that $\frac{\partial}{\partial t} = j \omega $
   $
 \]
 
-\\
-\\
-Discretize to find D\\
-Discretized at point i,j,k
+This has too much info. Since we are doing 2D, $\kappa_{z}=1$, $\sigma_{z}=0$ in
+this simulation. As well as $D_{x}=D_{y}=0$ and $H_{z}=0$. Equation reduces to:
+
 \[
   $
   \begin{bmatrix}
-    \frac{H_{z}^{n+1/2}(i,j+1,k)-H_{z}^{n+1/2}(i,j,k)}{\Delta_{y}}-\frac{H_{y}^{n+1/2}(i,j,k+1)-H_{y}^{n+1/2}(i,j,k)}{\Delta_{z}} \\
-    \frac{H_{x}^{n+1/2}(i,j,k+1)-H_{x}^{n+1/2}(i,j,k)}{\Delta_{z}}-\frac{H_{z}^{n+1/2}(i+1,j,k)-H_{z}^{n+1/2}(i,j,k)}{\Delta_{x}} \\
-    \frac{H_{y}^{n+1/2}(i+1,j,k)-H_{y}^{n+1/2}(i,j,k)}{\Delta_{x}}-\frac{H_{x}^{n+1/2}(i,j+1,k)-H_{x}^{n+1/2}(i,j,k)}{\Delta_{y}}
+    \frac{\partial H_{z}}{\partial y}-\frac{\partial H_{y}}{\partial z} \\
+    \frac{\partial H_{x}}{\partial z}-\frac{\partial H_{z}}{\partial x} \\
+    \frac{\partial H_{y}}{\partial x}-\frac{\partial H_{x}}{\partial y}
   \end{bmatrix}
   $
   =
+  \frac{\partial}{\partial t}
   $
   \begin{bmatrix}
-    \kappa_{y}  & 0           & 0           \\
-    0           & \kappa_{z}  & 0           \\
-    0           & 0           & \kappa_{x}  \\
+    \kappa_{y}  & 0   & 0          \\
+    0           & 1   & 0           \\
+    0           & 0   & \kappa_{x}   \\
   \end{bmatrix}
   \begin{bmatrix}
-    D_{x}^{n+1}-D_{x}^{n} \\
-    D_{y}^{n+1}-D_{y}^{n} \\
-    D_{z}^{n+1}-D_{z}^{n}
+    0 \\
+    0 \\
+    D_{z}
   \end{bmatrix}
   $
   +\frac{1}{\epsilon_{0}}
   $
   \begin{bmatrix}
-    \sigma_{y}  & 0           & 0           \\
-    0           & \sigma_{z}  & 0           \\
-    0           & 0           & \sigma_{x}  \\
+    \sigma_{y}  & 0  & 0           \\
+    0           & 0  & 0           \\
+    0           & 0  & \sigma_{x}   \\
   \end{bmatrix}
   \begin{bmatrix}
-    D_{x}^{n} \\
-    D_{y}^{n} \\
-    D_{z}^{n}
+    0 \\
+    0 \\
+    D_{z}
   \end{bmatrix}
   $
 \]
 
-Update Components for D\\
+This leaves us with one equation to find an update quation for  $D_{z}$:
+\[
+  \frac{\partial H_{y}}{\partial x}-\frac{\partial H_{x}}{\partial y}=  \kappa_{x}\frac{\partial}{\partial t} D_{z}+\frac{\sigma_{x}}{\epsilon_{0}} D_{z}
+\]
+
+
+Using semi-implicit (???)
+
+\[D^{n+1/2}=\frac{D^{n+1}+D^{n}}{2}\]
+
+If we discretize around point i,j,k at timestep n
+
+This equation discretizes to:
+
+\begin{multline*}
+  \frac{1}{\Delta_{x}}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
+ -\frac{1}{\Delta_{y}}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))= \\
+  \frac{\kappa_{x}}{\Delta t}
+   (D_{z}^{n+1}(i,j)-D_{z}^{n}(i,j))+
+   \frac{\sigma_{x}}{2 \epsilon_{0}}
+   (D_{z}^{n+1}(i,j)+D_{z}^{n}(i,j))
+ \end{multline*}
+
+
+ We can solve this to find update equation for D:
+
+ \begin{multline*}
+  \frac{1}{\Delta_{x}}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
+ -\frac{1}{\Delta_{y}}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))= \\
+  (\frac{\sigma_{x}}{2\epsilon_{0}}+\frac{\kappa_{x}}{\Delta t})D_{z}^{n+1}(i,j)+
+  (\frac{\sigma_{x}}{2\epsilon_{0}}-\frac{\kappa_{x}}{\Delta t})D_{z}^{n}(i,j)
+\end{multline*}
+
+ \begin{multline*}
+  \frac{1}{\Delta_{x}}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
+ -\frac{1}{\Delta_{y}}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))= \\
+  (\frac{\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x}}{2\epsilon_{0}\Delta t})D_{z}^{n+1}(i,j)+
+  (\frac{\sigma_{x}\Delta t-2\epsilon_{0}\kappa_{x}}{2\epsilon_{0}\Delta t})D_{z}^{n}(i,j)
+ \end{multline*}
+
+ \begin{multline*}
+  D_{z}^{n+1}(i,j) = -\frac{\sigma_{x}\Deltat-2\epsilon_{0}\kappa_{x}}{\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x}}D_{z}^{n}(i,j) \\
+ +\frac{2\epsilon_{0}\Delta t}{\Delta_{x}(\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x})}(H_{y}^{n+1/2}(i+1/2,j)-H_{y}^{n+1/2}(i-1/2,j)) \\
+ -\frac{2\epsilon_{0}\Delta t}{\Delta_{y}(\sigma_{x}\Delta t+2\epsilon_{0}\kappa_{x})}(H_{x}^{n+1/2}(i,j+1/2)-H_{x}^{n+1/2}(i,j-1/2))
+ \end{multline*}
+
+ 
 Update Components for E\\
 \\
 Update Components for B\\

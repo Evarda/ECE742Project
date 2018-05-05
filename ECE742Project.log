@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 MAY 2018 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAY 2018 11:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -349,52 +349,26 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-./ECE742Project.tex:116: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.116 \\
-        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ECE742Project.tex:117: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.117 D
-       iscretize to find D\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./ECE742Project.tex:120: Display math should end with $$.
+./ECE742Project.tex:119: Display math should end with $$.
 <to be read again> 
                     
-l.120   $
+l.119   $
          
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-./ECE742Project.tex:121: Missing $ inserted.
+./ECE742Project.tex:120: Missing $ inserted.
 <inserted text> 
                 $
-l.121   \begin{bmatrix}
+l.120   \begin{bmatrix}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./ECE742Project.tex:125: Missing $ inserted.
+./ECE742Project.tex:124: Missing $ inserted.
 <inserted text> 
                 $
-l.125   \end{bmatrix}
+l.124   \end{bmatrix}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -489,20 +463,38 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+[2]
+./ECE742Project.tex:199: Undefined control sequence.
+<argument> \sigma _{x}\Deltat 
+                              -2\epsilon _{0}\kappa _{x}
+l.199  \end{multline*}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (58.31476pt too wide) in paragraph at lines 120--154
-$[]$ $\OT1/cmr/m/n/10 =$ $[]$ $[]$
+./ECE742Project.tex:199: Undefined control sequence.
+<argument> \sigma _{x}\Deltat 
+                              -2\epsilon _{0}\kappa _{x}
+l.199  \end{multline*}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--206
+
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
-
- []
-
-./ECE742Project.tex:164: Missing } inserted.
+./ECE742Project.tex:210: Missing } inserted.
 <inserted text> 
                 }
-l.164 ... cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
+l.210 ... cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -510,17 +502,17 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 232--235
 
  []
 
-[3] (./ECE742Project.aux) ) 
+[4] (./ECE742Project.aux) ) 
 Here is how much of TeX's memory you used:
- 847 strings out of 492995
- 9571 string characters out of 6132704
- 76244 words of memory out of 5000000
- 4456 multiletter control sequences out of 15000+600000
+ 848 strings out of 492995
+ 9577 string characters out of 6132704
+ 77244 words of memory out of 5000000
+ 4457 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,9n,20p,209b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -539,10 +531,10 @@ ts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y7.pfb>
-Output written on ECE742Project.pdf (3 pages, 152518 bytes).
+Output written on ECE742Project.pdf (4 pages, 154600 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

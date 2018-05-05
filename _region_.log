@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=prv_ECE742Project 2018.5.2)  3 MAY 2018 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=prv_ECE742Project 2018.5.5)  5 MAY 2018 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -48,177 +48,400 @@ No auxiliary output files.
 
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
-)  !name(ECE742Project.tex) !offset(63) 
+)  !name(ECE742Project.tex) !offset(179) 
 ! Preview: Snippet 1 started.
 <-><->
       
-l.15 \[
-       
+l.16  \begin{multline*}
+                       
 Not a real error.
 
-! Display math should end with $$.
-<to be read again> 
-                    
-l.16   $
-        
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+! Undefined control sequence.
+<argument> \sigma _{x}\Deltat 
+                              -2\epsilon _{0}\kappa _{x}
+l.20  \end{multline*}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.17   \begin{bmatrix}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.21   \end{bmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.26   \begin{bmatrix}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.30   \end{bmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.31   \begin{bmatrix}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.35   \end{bmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.39   \begin{bmatrix}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.43   \end{bmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.44   \begin{bmatrix}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.48   \end{bmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.50 \]
-       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+! Undefined control sequence.
+<argument> \sigma _{x}\Deltat 
+                              -2\epsilon _{0}\kappa _{x}
+l.20  \end{multline*}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(2000379+1213946x20077467).
+! Preview: Snippet 1 ended.(4970637+0x22609920).
 <-><->
       
-l.50 \]
-       
+l.20  \end{multline*}
+                     
 Not a real error.
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.28 \subsection
+                {Graded Conductivity}
+Not a real error.
 
-! LaTeX Error: There's no line here to end.
+! Preview: Snippet 2 ended.(546132+152916x22609920).
+<-><->
+      
+l.28 \subsection{Graded Conductivity}
+                                     
+Not a real error.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+[2
+
+]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.31 \[
+       R(\theta)=\exp^{-2\eta cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
+Not a real error.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.31 ...a cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
                                                   
-l.53 \\
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+! Preview: Snippet 3 ended.(869520+0x15453450).
+<-><->
+      
+l.31 ...a cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
                                                   
-l.54 D
-      iscretize to find D\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Not a real error.
 
- !name(ECE742Project.tex) !offset(108)  ) 
+[3]
+! Preview: Snippet 4 started.
+<-><->
+      
+l.33   Where $
+              \sigma_{x}$ is the graded conductivity of the PML material.\\
+Not a real error.
+
+! Preview: Snippet 4 ended.(282168+98303x704437).
+<-><->
+      
+l.33   Where $\sigma_{x}$
+                          is the graded conductivity of the PML material.\\
+Not a real error.
+
+[4]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.34   $
+        \theta$ is the angle of incidence of the wave. So steeper angles of ...
+Not a real error.
+
+! Preview: Snippet 5 ended.(455111+0x325860).
+<-><->
+      
+l.34   $\theta$
+                is the angle of incidence of the wave. So steeper angles of ...
+Not a real error.
+
+[5]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.34 ...idence of the wave. So steeper angles of $
+                                                  \theta$
+Not a real error.
+
+! Preview: Snippet 6 ended.(455111+0x325860).
+<-><->
+      
+l.34 ...of the wave. So steeper angles of $\theta$
+                                                  
+Not a real error.
+
+[6]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.42 \subsubsection
+                   {Polynomial grading}
+Not a real error.
+
+! Preview: Snippet 7 ended.(455111+127431x22609920).
+<-><->
+      
+l.42 \subsubsection{Polynomial grading}
+                                       
+Not a real error.
+
+[7
+
+]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.44 \[
+       \sigma_{x} = (\frac{x}{d})^{m} \sigma_{x,max}\]
+Not a real error.
+
+! Preview: Snippet 8 ended.(1175069+0x13817073).
+<-><->
+      
+l.44 ...a_{x} = (\frac{x}{d})^{m} \sigma_{x,max}\]
+                                                  
+Not a real error.
+
+[8]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.45 And the graded value for $
+                               \kappa_{x}$ is:
+Not a real error.
+
+! Preview: Snippet 9 ended.(282168+98303x707547).
+<-><->
+      
+l.45 And the graded value for $\kappa_{x}$
+                                           is:
+Not a real error.
+
+[9]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.46 \[
+       \kappa_{x}=1+(\kappa_{x,max}-1)(\frac{x}{d})^{m}\]
+Not a real error.
+
+! Preview: Snippet 10 ended.(1175069+0x15203717).
+<-><->
+      
+l.46 ...x}=1+(\kappa_{x,max}-1)(\frac{x}{d})^{m}\]
+                                                  
+Not a real error.
+
+[10]
+! Preview: Snippet 11 started.
+<-><->
+      
+l.49 \subsubsection
+                   {Geometric grading}
+Not a real error.
+
+! Preview: Snippet 11 ended.(455111+127431x22609920).
+<-><->
+      
+l.49 \subsubsection{Geometric grading}
+                                      
+Not a real error.
+
+[11
+
+]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.51 \[
+       \sigma_{x} =(g^{\frac{1}{\Delta}})^{x} \sigma_{x,0}\]
+Not a real error.
+
+! Preview: Snippet 12 ended.(845384+0x13517431).
+<-><->
+      
+l.51 ...=(g^{\frac{1}{\Delta}})^{x} \sigma_{x,0}\]
+                                                  
+Not a real error.
+
+[12]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.53 $
+      \sigma_{x,0}$ is the conductivity at the surface of the PML.\\
+Not a real error.
+
+! Preview: Snippet 13 ended.(282168+187504x1121320).
+<-><->
+      
+l.53 $\sigma_{x,0}$
+                    is the conductivity at the surface of the PML.\\
+Not a real error.
+
+[13]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.54 g is a scaling factor. Nearly optimal: $
+                                             2 \leq g \leq 3$\\
+Not a real error.
+
+! Preview: Snippet 14 ended.(422343+127431x2739073).
+<-><->
+      
+l.54 ... factor. Nearly optimal: $2 \leq g \leq 3$
+                                                  \\
+Not a real error.
+
+[14]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.55 $
+      \Delta$ is spacing of FDTD lattice.\\
+Not a real error.
+
+! Preview: Snippet 15 ended.(447828+0x546135).
+<-><->
+      
+l.55 $\Delta$
+              is spacing of FDTD lattice.\\
+Not a real error.
+
+[15]
+! Preview: Snippet 16 started.
+<-><->
+      
+l.57 And the graded value for $
+                               \kappa_{x}$ is:
+Not a real error.
+
+! Preview: Snippet 16 ended.(282168+98303x707547).
+<-><->
+      
+l.57 And the graded value for $\kappa_{x}$
+                                           is:
+Not a real error.
+
+[16]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.58 \[
+       \kappa_{x}=[(\kappa_{max})^{\frac{1}{d}}g^{\frac{1}{\Delta}}]^{x}\]
+Not a real error.
+
+! Preview: Snippet 17 ended.(821720+0x14085026).
+<-><->
+      
+l.58 ...)^{\frac{1}{d}}g^{\frac{1}{\Delta}}]^{x}\]
+                                                  
+Not a real error.
+
+[17]
+! Preview: Snippet 18 started.
+<-><->
+      
+l.60 \section
+             {Code}
+Not a real error.
+
+! Preview: Snippet 18 ended.(655359+0x22609920).
+<-><->
+      
+l.60 \section{Code}
+                   
+Not a real error.
+
+[18
+
+]
+! Preview: Snippet 19 started.
+<-><->
+      
+l.63 \section
+             {Error Analysis}
+Not a real error.
+
+! Preview: Snippet 19 ended.(655359+183500x22609920).
+<-><->
+      
+l.63 \section{Error Analysis}
+                             
+Not a real error.
+
+[19
+
+]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.69 \subsubsection
+                   {Error of Polynomial Grading}
+Not a real error.
+
+! Preview: Snippet 20 ended.(455111+127431x22609920).
+<-><->
+      
+l.69 \subsubsection{Error of Polynomial Grading}
+                                                
+Not a real error.
+
+[20
+
+]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.71 \subsubsection
+                   {Error of Geometric Grading}
+Not a real error.
+
+! Preview: Snippet 21 ended.(455111+127431x22609920).
+<-><->
+      
+l.71 \subsubsection{Error of Geometric Grading}
+                                               
+Not a real error.
+
+[21
+
+]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.73 \section
+             {Fix me: Bibliography}
+Not a real error.
+
+! Preview: Snippet 22 ended.(655359+183500x22609920).
+<-><->
+      
+l.73 \section{Fix me: Bibliography}
+                                   
+Not a real error.
+
+[22
+
+] ) 
 Here is how much of TeX's memory you used:
- 181 strings out of 492148
- 2813 string characters out of 6122802
- 69609 words of memory out of 5000000
- 4610 multiletter control sequences out of 15000+600000
- 6177 words of font info for 23 fonts, out of 8000000 for 9000
+ 186 strings out of 492148
+ 2873 string characters out of 6122802
+ 68609 words of memory out of 5000000
+ 4614 multiletter control sequences out of 15000+600000
+ 7089 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 22i,11n,24p,170b,142s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on _region_.pdf (1 page, 62039 bytes).
+ 22i,10n,24p,170b,140s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on _region_.pdf (22 pages, 107925 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
