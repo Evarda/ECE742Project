@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=prv_ECE742Project 2018.5.5)  5 MAY 2018 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=prv_ECE742Project 2018.5.5)  5 MAY 2018 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -121,78 +121,36 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \Gin@req@height=\dimen125
 \Gin@req@width=\dimen126
-)  !name(ECE742Project.tex) !offset(193) 
-
-LaTeX Warning: Reference `DzEzRelation' on page 1 undefined on input line 20.
-
+)  !name(ECE742Project.tex) !offset(208) 
 ! Preview: Snippet 1 started.
 <-><->
       
-l.21  \begin{equation}
-                      s_{z}D_{z}=\epsilon s_{y}E_{z}\end{equation}
+l.15  \begin{equation}
+                      
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(679024+0x22609920).
+! Preview: Snippet 1 ended.(1446315+0x22609920).
 <-><->
       
-l.21 ...{z}D_{z}=\epsilon s_{y}E_{z}\end{equation}
-                                                  
+l.18  \end{equation}
+                    
 Not a real error.
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Reference `SyEquation' on page 1 undefined on input line 23.
-
-
-LaTeX Warning: Reference `SzEquation' on page 1 undefined on input line 23.
-
-! Preview: Snippet 2 started.
-<-><->
-      
-l.25  \begin{equation}
-                      (=\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}})D_...
-Not a real error.
-
-! Preview: Snippet 2 ended.(1302500+0x22609920).
-<-><->
-      
-l.25 ...}{j\omega\epsilon_{0}})E_{z}\end{equation}
-                                                  
-Not a real error.
-
-[2]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 U
-      pdate Components for B\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
- !name(ECE742Project.tex) !offset(238) 
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]  !name(ECE742Project.tex) !offset(264)  ) 
 Here is how much of TeX's memory you used:
- 1405 strings out of 491578
- 21366 string characters out of 6112886
+ 1402 strings out of 491578
+ 21328 string characters out of 6112886
  104505 words of memory out of 5000000
- 6330 multiletter control sequences out of 15000+600000
+ 6327 multiletter control sequences out of 15000+600000
  6177 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,4n,30p,274b,116s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,3n,30p,274b,99s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on _region_.pdf (2 pages, 33317 bytes).
+Output written on _region_.pdf (1 page, 32199 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 24 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

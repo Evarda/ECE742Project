@@ -215,8 +215,23 @@ This equation discretizes to:
 
  Using \ref{SyEquation} and \ref{SzEquation}:
 
- \begin{equation}(=\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}})D_{z}=\epsilon (\kappa_{y}+\frac{\sigma_{y}}{j\omega\epsilon_{0}})E_{z}\end{equation}
+ \begin{equation}(\kappa_{z}+\frac{\sigma_{z}}{j\omega\epsilon_{0}})D_{z}=\epsilon
+   (\kappa_{y}+\frac{\sigma_{y}}{j\omega\epsilon_{0}})E_{z}\end{equation}
+
+ Take the partial time derivative and use $\frac{\partial}{\partial t}= j \omega$
  
+ \begin{equation}
+   \frac{\partial}{\partial t}(\kappa_{z}D_{z})+\frac{\sigma_{z}}{\epsilon_{0}}D_{z}=
+   \epsilon(\frac{\partial}{\partial t}(\kappa_{y}E_{z})+\frac{\sigma_{y}}{\epsilon_{0}}E_{z})
+ \end{equation}
+
+
+
+ 
+ \begin{equation}
+   \frac{\partial}{\partial t}(\kappa_{z}D_{z})+\frac{\sigma_{z}}{\epsilon_{0}}D_{z}=
+   \epsilon(\frac{\partial}{\partial t}(\kappa_{y}E_{z})+\frac{\sigma_{y}}{\epsilon_{0}}E_{z})
+ \end{equation}
 \\
 Update Components for B\\
 Update Components for H
