@@ -10,19 +10,22 @@ ep0 = 8.854187817*10^-12; %[F/m]
 c = 299792458; % speed of light [m/s]
 f = 10^9; % frequency [1/s]
 lambda = c/f; % wavelength [m]
-dx = lambda/10; % step size x [m]
-dy = lambda/10; % step size y [m]
+dx = lambda/20; % step size x [m]
+dy = lambda/20; % step size y [m]
 dt = dx/(c*sqrt(2)); % step size t
 
 % Declare Grids
 maxLength=100;
 [iarray,jarray] = meshgrid(1:maxLength,1:maxLength);
 Ez(1:maxLength,  1:maxLength)   = 0;
+Hx(1:maxLength,  1:maxLength-1) = 0;
+Hy(1:maxLength-1,1:maxLength)   = 0;
 Dz(1:maxLength,  1:maxLength)   = 0;
-Hx(1:maxLength,  1:maxLength) = 0;
-Bx(1:maxLength,  1:maxLength) = 0;
-Hy(1:maxLength, 1:maxLength)   = 0;
-By(1:maxLength, 1:maxLength)   = 0;
+Bx(1:maxLength,  1:maxLength-1) = 0;
+By(1:maxLength-1,1:maxLength)   = 0;
+ep(1:maxLength,  1:maxLength)   = 0;
+mu(1:maxLength,  1:maxLength)   = 0;
+
 
 ep=1*ep0;
 mu=1*mu0;
@@ -146,20 +149,19 @@ for n = 1:nmax
             Hx(i,j)=CHX1(1)*Hx(i,j)+CHX2(1)*(CHX3(i)*Bx(i,j)-CHX4(i)*Bx_old)/mu;
         end
     end    
-
     
     % Update Hy
     for i = 1:maxLength-1
         for j=1:maxLength-1
             By_old=By(i,j);
-            By(i,j)=CBY1(1)*Bx(i,j)-CBY2(1)*(Ez(i,j+1)-Ez(i,j))/dx;
-            Hy(i,j)=CHY1(i)*Hx(i,j)+CHY2(i)*(CHY3(j)*Bx(i,j)-CHY4(j)*By_old)/mu;
+            By(i,j)=CBY1(1)*By(i,j)-CBY2(1)*(Ez(i,j+1)-Ez(i,j))/dx;
+            Hy(i,j)=CHY1(i)*Hx(i,j)+CHY2(i)*(CHY3(j)*By(i,j)-CHY4(j)*By_old)/mu;
         end
     end    
     
     % Update Ez  
-    for i = 2:maxLength
-        for j=2:maxLength
+    for i = 2:maxLength-1
+        for j=2:maxLength-1
             Dz_old=Dz(i,j);
             Dz(i,j)=CDZ1(i)*Dz(i,j)+CDZ2(i)*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy);
             Ez(i,j)=CEZ1(j)*Ez(i,j)+CEZ2(j)*(CEZ3(1)*Dz(i,j)-CEZ4(1)*Dz_old)/ep;
