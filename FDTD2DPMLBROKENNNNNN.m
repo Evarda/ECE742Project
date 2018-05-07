@@ -12,7 +12,7 @@ f = 10^9; % frequency [1/s]
 lambda = c/f; % wavelength [m]
 dx = lambda/10; % step size x [m]
 dy = lambda/10; % step size y [m]
-dt = 1/(c*sqrt((1/dx)^2)+(1/dy)^2); % step size t
+dt = dx/(c*sqrt(2)); % step size t
 
 % Declare Grids
 maxLength=100;
@@ -91,9 +91,9 @@ for n = 1:nmax
     % Update Hx
     for i = 1:maxLength-1
         for j=1:maxLength-1
-            Bx_old(i,j)=Bx(i,j);
+            Bx_old=Bx(i,j);
             Bx(i,j)=CBx1*Bx(i,j)+CBx2*(Ez(i,j+1)-Ez(i,j))/dy;
-            Hx(i,j)=CHx1*Hx(i,j)+CHx2*(CHBx1*Bx(i,j)-CHBx2*Bx_old(i,j))/mu;
+            Hx(i,j)=CHx1*Hx(i,j)+CHx2*(CHBx1*Bx(i,j)-CHBx2*Bx_old)/mu;
         end
     end    
 
@@ -101,18 +101,18 @@ for n = 1:nmax
     % Update Hy
     for i = 1:maxLength-1
         for j=1:maxLength-1
-            By_old(i,j)=By(i,j);
+            By_old=By(i,j);
             By(i,j)=CBy1*Bx(i,j)-CBy2*(Ez(i,j+1)-Ez(i,j))/dx;
-            Hy(i,j)=CHy1*Hx(i,j)+CHy2*(CHBy1*Bx(i,j)-CHBy2*By_old(i,j))/mu;
+            Hy(i,j)=CHy1*Hx(i,j)+CHy2*(CHBy1*Bx(i,j)-CHBy2*By_old)/mu;
         end
     end    
     
     % Update Ez  
     for i = 2:maxLength
         for j=2:maxLength
-            Dz_old(i,j)=Dz(i,j);
+            Dz_old=Dz(i,j);
             Dz(i,j)=CDz1*Dz(i,j)+CDz2*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy);
-            Ez(i,j)=CEz1*Ez(i,j)+CEz2*(CEDz1*Dz(i,j)-CEDz2*Dz_old(i,j))/ep;
+            Ez(i,j)=CEz1*Ez(i,j)+CEz2*(CEDz1*Dz(i,j)-CEDz2*Dz_old)/ep;
         end
     end
     
