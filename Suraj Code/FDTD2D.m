@@ -15,7 +15,7 @@ dy = lambda/10; % step size y [m]
 dt = dx/(sqrt(2)*c); % step size t
 
 % Declare Grids
-maxLength=50;
+maxLength=100;
 [iarray,jarray] = meshgrid(1:maxLength,1:maxLength);
 Ez(1:maxLength,  1:maxLength)   = 0;
 Dz(1:maxLength,  1:maxLength)   = 0;
@@ -86,12 +86,19 @@ figure
 % Update Loop
 for n = 1:nmax
     % Update Hx
-    for i = 1:maxLength-boundsize
-        for j=1:maxLength-boundsize
+    for i = 1:boundsize-1
+        for j=1:boundsize-1
+            Bx_old=Bx(i,j);
+            Bx(i,j)=CBx1*Bx(i,j)+CBx2*(Ez(i,j+1)-Ez(i,j))/dy;
+            Hx(i,j)=CHx1*Hx(i,j)+CHx2*(CHBx1*Bx(i,j)-CHBx2*Bx_old)/mu;
+        end
+    end    
+    for i = boundsize:maxLength-boundsize-1
+        for j=boundsize:maxLength-boundsize-1
             Hx(i,j)=Hx(i,j)-HxUpFacy*(Ez(i,j+1)-Ez(i,j));
         end
     end
-    for i = maxLength-boundsize:maxLength
+    for i = maxLength-boundsize:maxLength-1
         for j=maxLength-boundsize:maxLength-1
             Bx_old=Bx(i,j);
             Bx(i,j)=CBx1*Bx(i,j)+CBx2*(Ez(i,j+1)-Ez(i,j))/dy;
@@ -100,12 +107,19 @@ for n = 1:nmax
     end
     
     % Update Hy
-    for i = 1:maxLength-boundsize
-        for j=1:maxLength-boundsize         
+    for i = 1:boundsize-1
+        for j=1:boundsize-1
+            By_old=By(i,j);
+            By(i,j)=CBy1*Bx(i,j)-CBy2*(Ez(i,j+1)-Ez(i,j))/dx;
+            Hy(i,j)=CHy1*Hx(i,j)+CHy2*(CHBy1*Bx(i,j)-CHBy2*By_old)/mu;
+        end
+    end    
+    for i = boundsize:maxLength-boundsize-1
+        for j=boundsize:maxLength-boundsize-1         
             Hy(i,j)=Hy(i,j)+HyUpFacx*(Ez(i+1,j)-Ez(i,j));
         end
     end
-    for i = maxLength-boundsize:maxLength
+    for i = maxLength-boundsize:maxLength-1
         for j=maxLength-boundsize:maxLength-1
             By_old=By(i,j);
             By(i,j)=CBy1*Bx(i,j)-CBy2*(Ez(i,j+1)-Ez(i,j))/dx;
@@ -113,14 +127,21 @@ for n = 1:nmax
         end
     end
     
-    % Update Ez    
-    for i = 2:maxLength-boundsize
-        for j=2:maxLength-boundsize
+    % Update Ez  
+    for i = 2:boundsize-1
+        for j=2:boundsize-1
+            Dz_old=Dz(i,j);
+            Dz(i,j)=CDz1*Dz(i,j)+CDz2*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy);
+            Ez(i,j)=CEz1*Ez(i,j)+CEz2*(CEDz1*Dz(i,j)-CEDz2*Dz_old)/ep;
+        end
+    end
+    for i = boundsize:maxLength-boundsize-1
+        for j=boundsize:maxLength-boundsize-1
             Ez(i,j)=Ez(i,j)+(EzUpFacx*(Hy(i,j)-Hy(i-1,j))-EzUpFacy*(Hx(i,j)-Hx(i,j-1)));
         end
     end
-    for i = maxLength-boundsize:maxLength-1
-        for j=maxLength-boundsize:maxLength-1
+    for i = maxLength-boundsize:maxLength
+        for j=maxLength-boundsize:maxLength
             Dz_old=Dz(i,j);
             Dz(i,j)=CDz1*Dz(i,j)+CDz2*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy);
             Ez(i,j)=CEz1*Ez(i,j)+CEz2*(CEDz1*Dz(i,j)-CEDz2*Dz_old)/ep;
