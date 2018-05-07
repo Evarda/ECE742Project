@@ -116,7 +116,7 @@ CHX3(i)=2*ep0*kx(i)+sigmax(i)*dt;
 CHX4(i)=2*ep0*kx(i)-sigmax(i)*dt;
 
 % Constants to Update Hy - index 1 1 i i j j
-CBY1(i)=(2*ep0*kz(i)-sigmaz(i)*dt)/(2*ep0*kz(i)+sigmaz(i)*dt);
+CBY1(i)=(2*ep0*kz(i)-sigmaz(i)*dt)/(2*ep0*kz(i)+sigmaz(i)*dt); %Constant
 CBY2(i)=(2*ep0*dt)/(2*ep0*kz(i)+sigmaz(i)*dt); %Constant
 CHY1(i)=(2*ep0*kx(i)-sigmax(i)*dt)/(2*ep0*kx(i)+sigmax(i)*dt);
 CHY2(i)=1/(2*ep0*kx(i)+sigmax(i)*dt);
@@ -128,8 +128,8 @@ CDZ1(i)=(2*ep0*kx(i)-sigmax(i)*dt)/(2*ep0*kx(i)+sigmax(i)*dt);
 CDZ2(i)=(2*ep0*dt)/(2*ep0*kx(i)+sigmax(i)*dt);
 CEZ1(i)=(2*ep0*ky(i)-sigmay(i)*dt)/(2*ep0*ky(i)+sigmay(i)*dt);
 CEZ2(i)=1/(2*ep0*ky(i)+sigmay(i)*dt);
-CEZ3(i)=2*ep0*kz(i)+sigmaz(i)*dt;
-CEZ4(i)=2*ep0*kz(i)-sigmaz(i)*dt;
+CEZ3(i)=2*ep0*kz(i)+sigmaz(i)*dt; %Constant
+CEZ4(i)=2*ep0*kz(i)-sigmaz(i)*dt; %Constant
 
 end
 
