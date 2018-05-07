@@ -165,9 +165,8 @@ for n = 1:nmax
             Dz_old=Dz(i,j);
             Dz(i,j)=CDZ1(i)*Dz(i,j)+CDZ2(i)*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy);
             Ez(i,j)=CEZ1(j)*Ez(i,j)+CEZ2(j)*(CEZ3(1)*Dz(i,j)-CEZ4(1)*Dz_old)/ep;
-        end
+            endz
     end
-    
     
     % PEC Boundary Conditions
     Ez(1:maxLength,1) = 0;
