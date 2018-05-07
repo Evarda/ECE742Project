@@ -44,8 +44,8 @@ sigmamax=5;
 for i=1:boundsize
     sigmax(maxLength-boundsize+i)=((i/boundsize)^m*sigmamax);
     sigmay(maxLength-boundsize+i)=((i/boundsize)^m*sigmamax);
-    sigmax(boundsize+1-i)=sigmax(i);
-    sigmay(boundsize+1-i)=sigmay(i);
+    sigmax(boundsize+1-i)=sigmax(maxLength-boundsize+i);
+    sigmay(boundsize+1-i)=sigmay(maxLength-boundsize+i);
 end
 
 
