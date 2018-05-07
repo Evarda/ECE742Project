@@ -43,7 +43,7 @@ boundSize=10; %also called d?
 % CDz1=(2*ep0*kx-sigmax*dt)/(2*ep0*kx+sigmax*dt);
 % CDz2=(2*ep0*dt)/(2*ep0*kx+sigmax*dt);
 
-% Constants to update H
+ 
 % CHx1=(2*ep0*kz-sigmaz*dt)/(2*ep0*kz+sigmaz*dt);
 % CHx2=1/(2*ep0*kz+sigmaz*dt);
 % CHy1=(2*ep0*kx-sigmax*dt)/(2*ep0*kx+sigmax*dt);
@@ -52,12 +52,11 @@ boundSize=10; %also called d?
 % CEz1=(2*ep0*ky-sigmay*dt)/(2*ep0*ky+sigmay*dt);
 % CEz2=1/(2*ep0*ky89+sigmay*dt);
 
-% Constants to update H (used for B)
-% CHBx1=2*ep0*kx+sigmax*dt;
-% CHBx2=2*ep0*kx-sigmax*dt;
-% CHBy1=2*ep0*ky+sigmay*dt;
-% CHBy2=2*ep0*ky-sigmay*dt;
 % Constants to update E (used for D)
+% CEDx1=2*ep0*kx+sigmax*dt;
+% CEDx2=2*ep0*kx-sigmax*dt;
+% CEDy1=2*ep0*ky+sigmay*dt;
+% CEDy2=2*ep0*ky-sigmay*dt;
 % CEDz1=2*ep0*kz+sigmaz*dt;
 % CEDz2=2*ep0*kz-sigmaz*dt;
 
