@@ -14,8 +14,11 @@ dt = dx/(sqrt(2)*c); % step size t
 maxLength=50;
 [iarray,jarray] = meshgrid(1:maxLength,1:maxLength);
 Ez(1:maxLength,  1:maxLength)   = 0;
+Ez(1:maxLength,  1:maxLength)   = 0;
 Hx(1:maxLength,  1:maxLength-1) = 0;
+Bx(1:maxLength,  1:maxLength-1) = 0;
 Hy(1:maxLength-1,1:maxLength)   = 0;
+By(1:maxLength-1,1:maxLength)   = 0;
 ep(1:maxLength,  1:maxLength)   = 0;
 mu(1:maxLength-1,1:maxLength)   = 0;
 
@@ -75,22 +78,45 @@ figure
 
 % Update Loop
 for n = 1:nmax
-    for i = 1:maxLength
-        for j=1:maxLength-1
-        % Update Hx
-        Hx(i,j)=Hx(i,j)-HxUpFacy*(Ez(i,j+1)-Ez(i,j));
+    % Update Hx
+    for i = 1:maxlength-boundsize-1
+        for j=1:maxlength-boundsize-1
+            Hx(i,j)=Hx(i,j)-HxUpFacy*(Ez(i,j+1)-Ez(i,j));
         end
     end
-    for i = 1:maxLength-1
-        for j=1:maxLength
-        % Update Hy
-        Hy(i,j)=Hy(i,j)+HyUpFacx*(Ez(i+1,j)-Ez(i,j));
+    for i = maxlength-boundsize:boundsize
+        for j=maxlength-boundsize:boundsize-1
+            Bx_old=Bx(i,j)
+            Bx(i,j)=CBx1*Bx(i,j)-CBx2*(Ez(i,j+1)-Ez(i,j))/dy;
+            Hx(i,j)=CHx1*Hx(i,j)+CHx2*(CHBx1*Bx(i,j)-CHBx2*B_old)/mu;
         end
     end
-    for i = 2:maxLength-1
-        for j=2:maxLength-1
-        % Update Ez
-        Ez(i,j)=Ez(i,j)+(EzUpFacx*(Hy(i,j)-Hy(i-1,j))-EzUpFacy*(Hx(i,j)-Hx(i,j-1)));
+    
+    % Update Hy
+    for i = 1:maxlength-boundsize-1
+        for j=1:maxlength-boundsize-1         
+            Hy(i,j)=Hy(i,j)+HyUpFacx*(Ez(i+1,j)-Ez(i,j));
+        end
+    end
+    for i = maxlength-boundsize:boundsize
+        for j=maxlength-boundsize:boundsize-1
+            By_old=By(i,j)
+            By(i,j)=CBy1*Bx(i,j)+CBy2*(Ez(i,j+1)-Ez(i,j))/dx;
+            Hy(i,j)=CHy1*Hx(i,j)-CHy2*(CHBy1*Bx(i,j)-CHBy2*B_old)/mu;
+        end
+    end
+    
+    % Update Ez    
+    for i = 2:maxlength-boundsize-1
+        for j=2:maxlength-boundsize-1
+            Ez(i,j)=Ez(i,j)+(EzUpFacx*(Hy(i,j)-Hy(i-1,j))-EzUpFacy*(Hx(i,j)-Hx(i,j-1)));
+        end
+    end
+    for i = maxlength-boundsize:boundsize-1
+        for j=maxlength-boundsize:boundsize-1
+            Dz_old=Dz(i,j)
+            Dz(i,j)=CDz1*Dz(i,j)+CDz2*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy)
+            Ez(i,j)=CEz1*Ez(i,j)+CEz2*(CEDz1*(Hy(i,j)-Hy(i-1,j))-CEDz2*(Hx(i,j)-Hx(i,j-1)))/ep;
         end
     end
     
@@ -129,5 +155,3 @@ for n = 1:nmax
     M=getframe;
     
 end
-
-% Update loop for UPML region
