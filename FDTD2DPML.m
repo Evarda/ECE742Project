@@ -12,7 +12,7 @@ f = 10^9; % frequency [1/s]
 lambda = c/f; % wavelength [m]
 dx = lambda/10; % step size x [m]
 dy = lambda/10; % step size y [m]
-dt = dx/(sqrt(2)*c); % step size t
+dt = 1/(10*c*sqrt((1/dx)^2)+(1/dy)^2); % step size t
 
 % Declare Grids
 maxLength=100;
@@ -24,9 +24,9 @@ Bx(1:maxLength,  1:maxLength) = 0;
 Hy(1:maxLength, 1:maxLength)   = 0;
 By(1:maxLength, 1:maxLength)   = 0;
 
-ep=1;
-mu=1;
-boundsize=10; %also called d?
+ep=1*ep0;
+mu=1*mu0;
+boundsize=10;
 % ep(1,boundSize,:)=boundary decay value
 % ep(maxlangth-boundasize,maxlength,:)=boundary decay value
 
@@ -37,6 +37,12 @@ kz=1;
 sigmax=0;
 sigmay=0;
 sigmaz=0;
+% kx(1:maxLength)=1;
+% ky(1:maxLength)=1;
+% kz(1:maxLength)=1;
+% sigmax(1:maxLength)=0;
+% sigmay(1:maxLength)=0;
+% sigmaz(1:maxLength)=0;
 % sigmax(1:boundsize)=0;
 % sigmay(1:boundsize)=0;
 % sigmaz(1:boundsize)=0;
@@ -58,24 +64,21 @@ CHx1=(2*ep0*kz-sigmaz*dt)/(2*ep0*kz+sigmaz*dt);
 CHx2=1/(2*ep0*kz+sigmaz*dt);
 CHy1=(2*ep0*kx-sigmax*dt)/(2*ep0*kx+sigmax*dt);
 CHy2=1/(2*ep0*kx+sigmax*dt);
-% Constants to update E
-CEz1=(2*ep0*ky-sigmay*dt)/(2*ep0*ky+sigmay*dt);
-CEz2=1/(2*ep0*ky+sigmay*dt);
+
 
 % Constants to update H (used for B)
 CHBx1=2*ep0*kx+sigmax*dt;
 CHBx2=2*ep0*kx-sigmax*dt;
 CHBy1=2*ep0*ky+sigmay*dt;
 CHBy2=2*ep0*ky-sigmay*dt;
+
+% Constants to update E
+CEz1=(2*ep0*ky-sigmay*dt)/(2*ep0*ky+sigmay*dt);
+CEz2=1/(2*ep0*ky+sigmay*dt);
 % Constants to update E (used for D)
 CEDz1=2*ep0*kz+sigmaz*dt;
 CEDz2=2*ep0*kz-sigmaz*dt;
 
-% Calculate Update Factor
-HxUpFacy = dt/(mu0*dy);
-HyUpFacx = dt/(mu0*dx);
-EzUpFacx = dt/(ep0*dx);
-EzUpFacy = dt/(ep0*dy);
 
 % Max Timesteps
 nmax = 200;
@@ -86,65 +89,30 @@ figure
 % Update Loop
 for n = 1:nmax
     % Update Hx
-    for i = 1:boundsize-1
-        for j=1:boundsize-1
-            Bx_old=Bx(i,j);
+    for i = 1:maxLength-1
+        for j=1:maxLength-1
+            Bx_old(i,j)=Bx(i,j);
             Bx(i,j)=CBx1*Bx(i,j)+CBx2*(Ez(i,j+1)-Ez(i,j))/dy;
-            Hx(i,j)=CHx1*Hx(i,j)+CHx2*(CHBx1*Bx(i,j)-CHBx2*Bx_old)/mu;
+            Hx(i,j)=CHx1*Hx(i,j)+CHx2*(CHBx1*Bx(i,j)-CHBx2*Bx_old(i,j))/mu;
         end
     end    
-    for i = boundsize:maxLength-boundsize-1
-        for j=boundsize:maxLength-boundsize-1
-            Hx(i,j)=Hx(i,j)-HxUpFacy*(Ez(i,j+1)-Ez(i,j));
-        end
-    end
-    for i = maxLength-boundsize:maxLength-1
-        for j=maxLength-boundsize:maxLength-1
-            Bx_old=Bx(i,j);
-            Bx(i,j)=CBx1*Bx(i,j)+CBx2*(Ez(i,j+1)-Ez(i,j))/dy;
-            Hx(i,j)=CHx1*Hx(i,j)+CHx2*(CHBx1*Bx(i,j)-CHBx2*Bx_old)/mu;
-        end
-    end
+
     
     % Update Hy
-    for i = 1:boundsize-1
-        for j=1:boundsize-1
-            By_old=By(i,j);
+    for i = 1:maxLength-1
+        for j=1:maxLength-1
+            By_old(i,j)=By(i,j);
             By(i,j)=CBy1*Bx(i,j)-CBy2*(Ez(i,j+1)-Ez(i,j))/dx;
-            Hy(i,j)=CHy1*Hx(i,j)+CHy2*(CHBy1*Bx(i,j)-CHBy2*By_old)/mu;
+            Hy(i,j)=CHy1*Hx(i,j)+CHy2*(CHBy1*Bx(i,j)-CHBy2*By_old(i,j))/mu;
         end
     end    
-    for i = boundsize:maxLength-boundsize-1
-        for j=boundsize:maxLength-boundsize-1         
-            Hy(i,j)=Hy(i,j)+HyUpFacx*(Ez(i+1,j)-Ez(i,j));
-        end
-    end
-    for i = maxLength-boundsize:maxLength-1
-        for j=maxLength-boundsize:maxLength-1
-            By_old=By(i,j);
-            By(i,j)=CBy1*Bx(i,j)-CBy2*(Ez(i,j+1)-Ez(i,j))/dx;
-            Hy(i,j)=CHy1*Hx(i,j)+CHy2*(CHBy1*Bx(i,j)-CHBy2*By_old)/mu;
-        end
-    end
     
     % Update Ez  
-    for i = 2:boundsize-1
-        for j=2:boundsize-1
-            Dz_old=Dz(i,j);
+    for i = 2:maxLength
+        for j=2:maxLength
+            Dz_old(i,j)=Dz(i,j);
             Dz(i,j)=CDz1*Dz(i,j)+CDz2*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy);
-            Ez(i,j)=CEz1*Ez(i,j)+CEz2*(CEDz1*Dz(i,j)-CEDz2*Dz_old)/ep;
-        end
-    end
-    for i = boundsize:maxLength-boundsize-1
-        for j=boundsize:maxLength-boundsize-1
-            Ez(i,j)=Ez(i,j)+(EzUpFacx*(Hy(i,j)-Hy(i-1,j))-EzUpFacy*(Hx(i,j)-Hx(i,j-1)));
-        end
-    end
-    for i = maxLength-boundsize:maxLength
-        for j=maxLength-boundsize:maxLength
-            Dz_old=Dz(i,j);
-            Dz(i,j)=CDz1*Dz(i,j)+CDz2*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy);
-            Ez(i,j)=CEz1*Ez(i,j)+CEz2*(CEDz1*Dz(i,j)-CEDz2*Dz_old)/ep;
+            Ez(i,j)=CEz1*Ez(i,j)+CEz2*(CEDz1*Dz(i,j)-CEDz2*Dz_old(i,j))/ep;
         end
     end
     
