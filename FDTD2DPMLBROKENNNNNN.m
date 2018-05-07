@@ -8,14 +8,14 @@ mu0 = 4*pi*10^-7; %[H/m]
 ep0 = 8.854187817*10^-12; %[F/m]
 
 c = 299792458; % speed of light [m/s]
-f = 10^9; % frequency [1/s]
+f = 1e9; % frequency [1/s]
 lambda = c/f; % wavelength [m]
-dx = lambda/20; % step size x [m]
-dy = lambda/20; % step size y [m]
+dx = lambda/10; % step size x [m]
+dy = lambda/10; % step size y [m]
 dt = dx/(c*sqrt(2)); % step size t
 
 % Declare Grids
-maxLength=100;
+maxLength=200;
 [iarray,jarray] = meshgrid(1:maxLength,1:maxLength);
 Ez(1:maxLength,  1:maxLength)   = 0;
 Hx(1:maxLength,  1:maxLength-1) = 0;
@@ -23,13 +23,13 @@ Hy(1:maxLength-1,1:maxLength)   = 0;
 Dz(1:maxLength,  1:maxLength)   = 0;
 Bx(1:maxLength,  1:maxLength-1) = 0;
 By(1:maxLength-1,1:maxLength)   = 0;
-ep(1:maxLength,  1:maxLength)   = 0;
-mu(1:maxLength,  1:maxLength)   = 0;
+% ep(1:maxLength,  1:maxLength)   = 0;
+% mu(1:maxLength,  1:maxLength)   = 0;
 
 
 ep=1*ep0;
 mu=1*mu0;
-boundsize=20;
+boundsize=50;
 % ep(1,boundSize,:)=boundary decay value
 % ep(maxlangth-boundasize,maxlength,:)=boundary decay value
 
@@ -41,7 +41,7 @@ sigmax(1:maxLength)=0;
 sigmay(1:maxLength)=0;
 sigmaz(1:maxLength)=0;
 
-% Polynomial Grading
+%Polynomial Grading
 m=2;
 sigmamax=5;
 kmax=3;
@@ -59,9 +59,9 @@ for i=1:boundsize
 end
 
 % Geometric Grading
-% g=2.5; % Nearly optimal: 2<=g<=3
-% sigma0=0.5;
-% kmax=3;
+% g=2; % Nearly optimal: 2<=g<=3
+% sigma0=0.0125;
+% kmax=1;
 % for i=1:boundsize
 %     sigmax(maxLength-boundsize+i)=(((g^(1/dx))^(i*dx))*sigma0);
 %     sigmay(maxLength-boundsize+i)=(((g^(1/dy))^(i*dy))*sigma0);
@@ -141,23 +141,19 @@ figure
 
 % Update Loop
 for n = 1:nmax
-    % Update Hx
+    
     for i = 1:maxLength-1
         for j=1:maxLength-1
+            % Update Hx
             Bx_old=Bx(i,j);
             Bx(i,j)=CBX1(j)*Bx(i,j)-CBX2(j)*(Ez(i,j+1)-Ez(i,j))/dy;
             Hx(i,j)=CHX1(1)*Hx(i,j)+CHX2(1)*(CHX3(i)*Bx(i,j)-CHX4(i)*Bx_old)/mu;
-        end
-    end    
-    
-    % Update Hy
-    for i = 1:maxLength-1
-        for j=1:maxLength-1
+            % Update Hy
             By_old=By(i,j);
             By(i,j)=CBY1(1)*By(i,j)+CBY2(1)*(Ez(i+1,j)-Ez(i,j))/dx;
-            Hy(i,j)=CHY1(i)*Hx(i,j)+CHY2(i)*(CHY3(j)*By(i,j)-CHY4(j)*By_old)/mu;
+            Hy(i,j)=CHY1(i)*Hy(i,j)+CHY2(i)*(CHY3(j)*By(i,j)-CHY4(j)*By_old)/mu;            
         end
-    end    
+    end  
     
     % Update Ez  
     for i = 2:maxLength-1
@@ -176,7 +172,8 @@ for n = 1:nmax
     Ez(maxLength, 1:maxLength) = 0;
     
     % Source
-    Ez(maxLength/2,maxLength/2) = cos(2*pi*f*dt*n);
+    %Ez(maxLength/2,maxLength/2) = cos(2*pi*f*dt*n);
+    Ez(maxLength/2,maxLength/2)=exp(-(((n-10)/5)^2)); 
     
     % Plot
     % Surface Plot
