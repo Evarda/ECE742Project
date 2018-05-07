@@ -41,14 +41,36 @@ sigmaz(1:maxLength)=0;
 % Polynomial Grading
 m=2;
 sigmamax=5;
+kmax=3;
 for i=1:boundsize
     sigmax(maxLength-boundsize+i)=((i/boundsize)^m*sigmamax);
     sigmay(maxLength-boundsize+i)=((i/boundsize)^m*sigmamax);
     sigmax(boundsize+1-i)=sigmax(maxLength-boundsize+i);
     sigmay(boundsize+1-i)=sigmay(maxLength-boundsize+i);
 end
+for i=1:boundsize
+    kx(maxLength-boundsize+i)=1+(kmax-1)*(i/boundsize)^m;
+    ky(maxLength-boundsize+i)=1+(kmax-1)*(i/boundsize)^m;
+    kx(boundsize+1-i)=kx(maxLength-boundsize+i);
+    ky(boundsize+1-i)=ky(maxLength-boundsize+i);
+end
 
-
+% Geometric Grading
+% g=2.5; % Nearly optimal: 2<=g<=3
+% sigma0=0.5;
+% kmax=3;
+% for i=1:boundsize
+%     sigmax(maxLength-boundsize+i)=(((g^(1/dx))^(i*dx))*sigma0);
+%     sigmay(maxLength-boundsize+i)=(((g^(1/dy))^(i*dy))*sigma0);
+%     sigmax(boundsize+1-i)=sigmax(maxLength-boundsize+i);
+%     sigmay(boundsize+1-i)=sigmay(maxLength-boundsize+i);
+% end
+% for i=1:boundsize
+%     kx(maxLength-boundsize+i)=(kmax^(1/(boundsize*dx))*(g^(1/dx)))^(i*dx);
+%     ky(maxLength-boundsize+i)=(kmax^(1/(boundsize*dy))*(g^(1/dy)))^(i*dy);
+%     kx(boundsize+1-i)=kx(maxLength-boundsize+i);
+%     ky(boundsize+1-i)=ky(maxLength-boundsize+i);
+% end
 
 % Declare Update Constant Arrays
 
