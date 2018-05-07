@@ -1,3 +1,6 @@
+clc;
+close all;
+clear all;
 % Material Grid Properties
 % Uniform Free Space
 mu0 = 4*pi*10^-7; %[H/m]
@@ -64,7 +67,7 @@ for n = 1:nmax
     % Plot
     % Surface Plot
     subplot(2,1,1)
-    surf(iarray, jarray, Ez);
+    surf(Ez);
     axis([1, maxLength, 1, maxLength, -1, 1])
     xlabel('x [m]')
     xticks(iarray(1,10:10:maxLength))
@@ -76,7 +79,7 @@ for n = 1:nmax
     
     % Contour Plot
     subplot(2,1,2)
-    contour(iarray, jarray, Ez);
+    contour(Ez);
     xlabel('x [m]')
     xticks(iarray(1,10:10:maxLength))
     xticklabels(dx*iarray(1,10:10:maxLength))
