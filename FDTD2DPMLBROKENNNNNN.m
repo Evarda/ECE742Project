@@ -42,13 +42,15 @@ sigmaz(1:maxLength)=0;
 m=2;
 sigmamax=5;
 for i=1:boundsize
-    sigmax(i)=((i/boundsize)^m*sigmamax);
-    sigmay(i)=((i/boundsize)^m*sigmamax);
-    sigmax(maxLength-boundsize+i)=sigmax(i);
-    sigmay(maxLength-boundsize+i)=sigmay(i);
+    sigmax(maxLength-boundsize+i)=((i/boundsize)^m*sigmamax);
+    sigmay(maxLength-boundsize+i)=((i/boundsize)^m*sigmamax);
+    sigmax(boundsize+1-i)=sigmax(i);
+    sigmay(boundsize+1-i)=sigmay(i);
 end
 
-% Declare Arrays
+
+
+% Declare Update Constant Arrays
 
 % Constants to Update Hx
 CBX1(1:maxLength)=0;
@@ -76,11 +78,11 @@ CEZ4(1:maxLength)=0;
 
 
 
-% Fill Arrays
+% Fill Update Constant Arrays
 
 for i=1:maxLength
     
-% Constants to Update Hx - index j j 0 0 i i
+% Constants to Update Hx - index j j 1 1 i i
 CBX1(i)=(2*ep0*ky(i)-sigmay(i)*dt)/(2*ep0*ky(i)+sigmay(i)*dt);
 CBX2(i)=(2*ep0*dt)/(2*ep0*ky(i)+sigmay(i)*dt);
 CHX1(i)=(2*ep0*kz(i)-sigmaz(i)*dt)/(2*ep0*kz(i)+sigmaz(i)*dt); %Constant
@@ -88,7 +90,7 @@ CHX2(i)=1/(2*ep0*kz(i)+sigmaz(i)*dt); %Constant
 CHX3(i)=2*ep0*kx(i)+sigmax(i)*dt;
 CHX4(i)=2*ep0*kx(i)-sigmax(i)*dt;
 
-% Constants to Update Hy - index 0 0 i i j j
+% Constants to Update Hy - index 1 1 i i j j
 CBY1(i)=(2*ep0*kz(i)-sigmaz(i)*dt)/(2*ep0*kz(i)+sigmaz(i)*dt);
 CBY2(i)=(2*ep0*dt)/(2*ep0*kz(i)+sigmaz(i)*dt); %Constant
 CHY1(i)=(2*ep0*kx(i)-sigmax(i)*dt)/(2*ep0*kx(i)+sigmax(i)*dt);
@@ -96,7 +98,7 @@ CHY2(i)=1/(2*ep0*kx(i)+sigmax(i)*dt);
 CHY3(i)=2*ep0*ky(i)+sigmay(i)*dt;
 CHY4(i)=2*ep0*ky(i)-sigmay(i)*dt;
 
-% Constants to update Ez - index i i j j 0 0
+% Constants to update Ez - index i i j j 1 1
 CDZ1(i)=(2*ep0*kx(i)-sigmax(i)*dt)/(2*ep0*kx(i)+sigmax(i)*dt);
 CDZ2(i)=(2*ep0*dt)/(2*ep0*kx(i)+sigmax(i)*dt);
 CEZ1(i)=(2*ep0*ky(i)-sigmay(i)*dt)/(2*ep0*ky(i)+sigmay(i)*dt);
@@ -119,7 +121,7 @@ for n = 1:nmax
         for j=1:maxLength-1
             Bx_old=Bx(i,j);
             Bx(i,j)=CBX1(j)*Bx(i,j)+CBX2(j)*(Ez(i,j+1)-Ez(i,j))/dy;
-            Hx(i,j)=CHX1(0)*Hx(i,j)+CHX2(0)*(CHX3(i)*Bx(i,j)-CHX4(i)*Bx_old)/mu;
+            Hx(i,j)=CHX1(1)*Hx(i,j)+CHX2(1)*(CHX3(i)*Bx(i,j)-CHX4(i)*Bx_old)/mu;
         end
     end    
 
@@ -128,7 +130,7 @@ for n = 1:nmax
     for i = 1:maxLength-1
         for j=1:maxLength-1
             By_old=By(i,j);
-            By(i,j)=CBY1(0)*Bx(i,j)-CBY2(0)*(Ez(i,j+1)-Ez(i,j))/dx;
+            By(i,j)=CBY1(1)*Bx(i,j)-CBY2(1)*(Ez(i,j+1)-Ez(i,j))/dx;
             Hy(i,j)=CHY1(i)*Hx(i,j)+CHY2(i)*(CHY3(j)*Bx(i,j)-CHY4(j)*By_old)/mu;
         end
     end    
@@ -138,7 +140,7 @@ for n = 1:nmax
         for j=2:maxLength
             Dz_old=Dz(i,j);
             Dz(i,j)=CDZ1(i)*Dz(i,j)+CDZ2(i)*((Hy(i,j)-Hy(i-1,j))/dx-(Hx(i,j)-Hx(i,j-1))/dy);
-            Ez(i,j)=CEZ1(j)*Ez(i,j)+CEZ2(j)*(CEZ3(0)*Dz(i,j)-CEZ4(0)*Dz_old)/ep;
+            Ez(i,j)=CEZ1(j)*Ez(i,j)+CEZ2(j)*(CEZ3(1)*Dz(i,j)-CEZ4(1)*Dz_old)/ep;
         end
     end
     
