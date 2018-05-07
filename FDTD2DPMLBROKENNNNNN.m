@@ -154,7 +154,7 @@ for n = 1:nmax
     for i = 1:maxLength-1
         for j=1:maxLength-1
             By_old=By(i,j);
-            By(i,j)=CBY1(1)*By(i,j)-CBY2(1)*(Ez(i,j+1)-Ez(i,j))/dx;
+            By(i,j)=CBY1(1)*By(i,j)-CBY2(1)*(Ez(i+1,j)-Ez(i,j))/dx;
             Hy(i,j)=CHY1(i)*Hx(i,j)+CHY2(i)*(CHY3(j)*By(i,j)-CHY4(j)*By_old)/mu;
         end
     end    
