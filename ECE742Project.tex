@@ -114,7 +114,7 @@ Using the defined values of s and that $\frac{\partial}{\partial t} = j \omega $
 \end{equation}
 
 This has too much info. Since we are doing 2D, $\kappa_{z}=1$, $\sigma_{z}=0$ in
-this simulation. As well as $D_{x}=D_{y}=0$ and $H_{z}=0$. Equation reduces to:
+this simulation. We are doing TM as well, so $D_{x}=D_{y}=0$ and $H_{z}=0$. Equation reduces to:
 
 \begin{equation}
   $
@@ -225,61 +225,76 @@ This equation discretizes to:
    \epsilon(\frac{\partial}{\partial t}(\kappa_{y}E_{z})+\frac{\sigma_{y}}{\epsilon_{0}}E_{z})
  \end{equation}
 
+ Discretize this to find update equation for D:
 
-
- 
  \begin{equation}
-   \frac{\partial}{\partial t}(\kappa_{z}D_{z})+\frac{\sigma_{z}}{\epsilon_{0}}D_{z}=
-   \epsilon(\frac{\partial}{\partial t}(\kappa_{y}E_{z})+\frac{\sigma_{y}}{\epsilon_{0}}E_{z})
+
  \end{equation}
-\\
-Update Components for B\\
-Update Components for H
+ 
+ Similarly, we can find the B update equation to be:
 
-\subsection{Graded Conductivity}
+ \begin{equation}
 
-Reflection Factor
-\[R(\theta)=\exp^{-2\eta cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx\]
+ \end{equation}
+
+ And we can find the H update equation to be:
+
+ \begin{equation}
+
+ \end{equation}
+
+\subsection{Code Implementation}
+\subsubsection{Update Equations}
+ Using the derivation above, we can update field values in a loop. It is
+ computationally more efficient to calculate the coefficients for these field
+ values as an array outside of the loop. This gives us 18 coefficients and their
+ corresponding simplified field update equations:
+ \begin{equation}
+   Ez
+ \end{equation}
+ \begin{equation}
+   CEX1=\frac{}{}
+ \end{equation}
+
+\subsubsection{Graded PML}
+The purpose of PML is to have the wave decay as the wave enters the PML, and a
+nonzero conductivity value will achieve this decay. However, a large discrepancy
+between the values of conductivity in the simulation region and the PML can
+result in unwanted reflections.
+
+The Reflection Factor is given by the equation:
+\begin{equation}
+  R(\theta)=\exp^{-2\eta cos(\theta)\int_{0}^{d}\sigma_{x}(x)dx
+\end{equation}
 
   Where $\sigma_{x}$ is the graded conductivity of the PML material.\\
   $\theta$ is the angle of incidence of the wave. So steeper angles of $\theta$
   will result in higher values of reflection error.\\
-We want to minimize relfection R but also make sure the wave decays completely
-in the PML boundary layer.
-
-We are going to compare the error for different types of grading profiles.
-And/or we can use different values in the grading profile 
+  
+We want to minimize reflection R but also make sure the wave decays completely
+within the PML.
 
 \subsubsection{Polynomial grading}
-Where the graded conductivity is:
+One type of grading, and the one  we have implemented, is the polynomial grading. We can
+describe the grading in our code by the factors $\sigma$ and $\kappa$
+Where the graded conductivity for the PML in the x direction is:
 \[\sigma_{x} = (\frac{x}{d})^{m} \sigma_{x,max}\]
-And the graded value for $\kappa_{x}$ is:
+And the graded value for $\kappa$ for the PML in the x direction is:
 \[\kappa_{x}=1+(\kappa_{x,max}-1)(\frac{x}{d})^{m}\]
-Reflection factor simplifies to 
 
-\subsubsection{Geometric grading}
-Where the graded conductivity is:
-\[\sigma_{x} =(g^{\frac{1}{\Delta}})^{x} \sigma_{x,0}\]
+We will vary the values for $\kappa_{max}$ and $\sigma_{max}$ in our numerical
+experiments to test how different PML material conditions affect the
+effectiveness of the PML.
 
-$\sigma_{x,0}$ is the conductivity at the surface of the PML.\\
-g is a scaling factor. Nearly optimal: $2 \leq g \leq 3$\\
-$\Delta$ is spacing of FDTD lattice.\\
-
-And the graded value for $\kappa_{x}$ is:
-\[\kappa_{x}=[(\kappa_{max})^{\frac{1}{d}}g^{\frac{1}{\Delta}}]^{x}\]
-
-\section{Code}
+\section{Experiment}
 
 
 \section{Error Analysis}
-Insert Error Analysis Here
+In order to test how well the PML is working to absorb the incoming reflection,
+we will calculate the relative error with respect to the case of no boundary conditions
 
 PMLs are exact for continuous functions, but error is introduced for discrete
 functions. Having a large step discontinuity can
-
-\subsubsection{Error of Polynomial Grading}
-
-\subsubsection{Error of Geometric Grading}
 
 \section{Fix me: Bibliography}
 Susan's book - third edition
