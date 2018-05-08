@@ -12,6 +12,8 @@
     "SyEquation"
     "SzEquation"
     "DzEzRelation"
-    "fig:Error1"))
+    "fig:RelErrSigmaxm3"
+    "fig:RelErrm"
+    "fig:RelErrSigmax"))
  :latex)
 

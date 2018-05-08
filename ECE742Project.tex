@@ -230,25 +230,25 @@ This equation discretizes to:
  Discretize this to find update equation for E:
 
  \begin{equation}
- E_{z}^{n+1}(i,j) = CEZ1  E_{z}^{n}(i,j) + CEZ2  (CEZ3 D_{z}^{n+1}(i,j)-CEZ4 D_{y}^{n}(i,j))/\epsilon
+ E_{z}^{n+1}(i,j) = \frac{2\epsilon_{0}\kappa_{y}-\sigma_{y}\Delta t}{2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t} E_{z}^{n}(i,j)+\frac{1}{2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t}  ((2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t) D_{z}^{n+1}(i,j)-(2\epsilon_{0}\kappa_{z}-\sigma_{z}\Delta t) D_{y}^{n}(i,j))/\epsilon
  \end{equation}
  
  Similarly, we can find the B update equations to be:
 
  \begin{equation}
- B_{x}^{n+1/2}(i,j) = CBX1  B_{x}^{n-1/2}(i,j) + CBX2  (E_{z}^{n}(i,j+1)-E_{z}^{n}(i,j))/dy
+ B_{x}^{n+1/2}(i,j) = \frac{2\epsilon_{0}\kappa_{y}-\sigma_{y}\Delta t}{2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t}  B_{x}^{n-1/2}(i,j) + \frac{2\epsilon_{0}\Delta t}{2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t}  (E_{z}^{n}(i,j+1)-E_{z}^{n}(i,j))/dy
  \end{equation}
  \begin{equation}
- B_{y}^{n+1/2}(i,j) = CBY1  B_{y}^{n-1/2}(i,j) + CBY2  (E_{z}^{n}(i+1,j)-E_{z}^{n}(i,j))/dx
+ B_{y}^{n+1/2}(i,j) = \frac{2\epsilon_{0}\kappa_{z}-\sigma_{z}\Delta t}{2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t}  B_{y}^{n-1/2}(i,j) + \frac{2\epsilon_{0}\Delta t}{2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t}  (E_{z}^{n}(i+1,j)-E_{z}^{n}(i,j))/dx
  \end{equation}
 
  And we can find the H update equations to be:
 
  \begin{equation}
- H_{x}^{n+1}(i,j) = CHX1  H_{x}^{n}(i,j) + CHX2  (CHX3 B_{x}^{n+1}(i,j)-CHX4 B_{x}^{n}(i,j))/\mu
+ H_{x}^{n+1}(i,j) = \frac{2\epsilon_{0}\kappa_{z}-\sigma_{z}\Delta t}{2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t}  H_{x}^{n}(i,j) + \frac{1}{2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t}  ((2\epsilon_{0}\kappa_{x}+\sigma_{x}\Delta t) B_{x}^{n+1}(i,j)-(2\epsilon_{0}\kappa_{x}-\sigma_{x}\Delta t) B_{x}^{n}(i,j))/\mu
  \end{equation}
  \begin{equation}
- H_{y}^{n+1}(i,j) = CHY1  H_{y}^{n}(i,j) + CHY2  (CHY3 B_{y}^{n+1}(i,j)-CHY4 B_{y}^{n}(i,j))/\mu
+ H_{y}^{n+1}(i,j) = \frac{2\epsilon_{0}\kappa_{x}-\sigma_{x}\Delta t}{2\epsilon_{0}\kappa_{x}+\sigma_{x}\Delta t}  H_{y}^{n}(i,j) + \frac{1}{2\epsilon_{0}\kappa_{x}+\sigma_{x}\Delta t}  ((=2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t) B_{y}^{n+1}(i,j)-(2\epsilon_{0}\kappa_{y}\sigma_{y}\Delta t) B_{y}^{n}(i,j))/\mu
  \end{equation} 
 
 \subsection{Code Implementation}
@@ -356,18 +356,45 @@ has been found numerically to be:
 \end{equation}
 
 \section{Experiment}
+Each E and H componenet within the UPML is computed using a two-step 
 
+
+We varied ____ this tells us _____
+
+We varied ____ this tells us ____
+
+We varied _____ this tells us _____
 
 
 \section{Error Analysis}
 In order to test how well the PML is working to absorb the incoming reflection,
 we will calculate the relative error with respect to the case of no boundary
-conditions.
+conditions. Error values were calculated for the amount of the wave within the
+simulation region, not including the wave present in the PML. 
+
+
+
 
 \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{ErrorPlot1}
-     \caption{Plot of the difference of numerical solution with respect to analytical solution of the derivative of a gaussian waveform U evaluated at different timestep dx.}\label{fig:Error1}
+  \centering
+  \includegraphics[width=\textwidth]{Rel_Err_SigMax_m3}
+  \caption{Plot of Relative Error with respect to time for values of
+    \sigma_{max} of 10^{-1}, 10^0, 10^1, 10^2, 10^3}\label{fig:RelErrSigmaxm3}
+\end{figure}
+
+
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{Rel_Err_m}
+  \caption{Plot of ???}\label{fig:RelErrm}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{Rel_Err_SigMax}
+  \caption{Plot of ???}\label{fig:RelErrSigmax}
 \end{figure}
 
 \section{Bibliography}

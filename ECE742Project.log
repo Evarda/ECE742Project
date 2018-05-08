@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2018 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2018 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -658,7 +658,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
-[3] [4]
+
+Overfull \hbox (103.08557pt too wide) detected at line 234
+\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) = [
+]\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) + 
+[]((2\OML/cmm/m/it/10 ^^O[]^^T[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^[[]\OT1/c
+mr/m/n/10 ^^A\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 D[]\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/
+10 (2\OML/cmm/m/it/10 ^^O[]^^T[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^[[]\OT
+1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 D[]\OT1/cmr
+/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 =^^O
+ []
+
+
+Overfull \hbox (14.1357pt too wide) detected at line 240
+\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) = [
+]\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) + 
+[](\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j \OT1/cmr/m/n/10 +
+ 1) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+i; j\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 =dy
+ []
+
+
+Overfull \hbox (13.7931pt too wide) detected at line 243
+\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) = [
+]\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) + 
+[](\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 + 1\
+OML/cmm/m/it/10 ; j\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 E[]\
+OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 =dx
+ []
+
+[3]
+Overfull \hbox (107.35698pt too wide) detected at line 249
+\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) = [
+]\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) + 
+[]((2\OML/cmm/m/it/10 ^^O[]^^T[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^[[]\OT1/c
+mr/m/n/10 ^^A\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 B[]\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/
+10 (2\OML/cmm/m/it/10 ^^O[]^^T[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^[[]\OT
+1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 B[]\OT1/cmr
+/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 =^^V
+ []
+
+
+Overfull \hbox (110.93095pt too wide) detected at line 252
+\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) = [
+]\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) + 
+[]((= 2\OML/cmm/m/it/10 ^^O[]^^T[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^[[]\OT1
+/cmr/m/n/10 ^^A\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 B[]\OT1/cmr/
+m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/
+n/10 (2\OML/cmm/m/it/10 ^^O[]^^T[]^^[[]\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 t\OT
+1/cmr/m/n/10 )\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cm
+r/m/n/10 ))\OML/cmm/m/it/10 =^^V
+ []
+
+[4]
 ./ECE742Project.tex:331: You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
@@ -686,48 +740,95 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--336
  []
 
 [5]
+Package epstopdf Info: Source file: <images/Rel_Err_SigMax_m3.eps>
+(epstopdf)                    date: 2018-05-08 14:52:05
+(epstopdf)                    size: 84540 bytes
+(epstopdf)             Output file: <images/Rel_Err_SigMax_m3-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2018-05-08 15:55:43
+(epstopdf)                    size: 22705 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_SigMax_m3-e
+ps-converted-to.pdf images/Rel_Err_SigMax_m3.eps>
+(epstopdf)             \includegraphics on input line 369.
+Package epstopdf Info: Output file is already uptodate.
 
-./ECE742Project.tex:369: LaTeX Error: File `ErrorPlot1' not found.
+<images/Rel_Err_SigMax_m3-eps-converted-to.pdf, id=32, 1445.4pt x 815.045pt>
+File: images/Rel_Err_SigMax_m3-eps-converted-to.pdf Graphic file (type pdf)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.369 ...udegraphics[width=\textwidth]{ErrorPlot1}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use images/Rel_Err_SigMax_m3-eps-converted-to.pdf>
+Package pdftex.def Info: images/Rel_Err_SigMax_m3-eps-converted-to.pdf used on 
+input line 369.
+(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
+Package epstopdf Info: Source file: <images/Rel_Err_m.eps>
+(epstopdf)                    date: 2018-05-08 14:52:05
+(epstopdf)                    size: 85881 bytes
+(epstopdf)             Output file: <images/Rel_Err_m-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-08 15:57:30
+(epstopdf)                    size: 21301 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_m-eps-conve
+rted-to.pdf images/Rel_Err_m.eps>
+(epstopdf)             \includegraphics on input line 375.
+Package epstopdf Info: Output file is already uptodate.
 
-[6] (./ECE742Project.aux) ) 
+<images/Rel_Err_m-eps-converted-to.pdf, id=33, 1445.4pt x 815.045pt>
+File: images/Rel_Err_m-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/Rel_Err_m-eps-converted-to.pdf>
+Package pdftex.def Info: images/Rel_Err_m-eps-converted-to.pdf used on input li
+ne 375.
+(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
+Package epstopdf Info: Source file: <images/Rel_Err_SigMax.eps>
+(epstopdf)                    date: 2018-05-08 14:52:05
+(epstopdf)                    size: 84067 bytes
+(epstopdf)             Output file: <images/Rel_Err_SigMax-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2018-05-08 15:57:31
+(epstopdf)                    size: 22547 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_SigMax-eps-
+converted-to.pdf images/Rel_Err_SigMax.eps>
+(epstopdf)             \includegraphics on input line 381.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Rel_Err_SigMax-eps-converted-to.pdf, id=34, 1445.4pt x 815.045pt>
+File: images/Rel_Err_SigMax-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/Rel_Err_SigMax-eps-converted-to.pdf>
+Package pdftex.def Info: images/Rel_Err_SigMax-eps-converted-to.pdf used on inp
+ut line 381.
+(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
+ [6 <./images/Rel_Err_SigMax_m3-eps-converted-to.pdf>] [7 <./images/Rel_Err_m-e
+ps-converted-to.pdf> <./images/Rel_Err_SigMax-eps-converted-to.pdf>] (./ECE742P
+roject.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2666 strings out of 492995
- 38251 string characters out of 6132704
+ 2682 strings out of 492995
+ 38885 string characters out of 6132704
  115901 words of memory out of 5000000
- 6185 multiletter control sequences out of 15000+600000
+ 6199 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,25p,277b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y7.pfb>
-Output written on ECE742Project.pdf (6 pages, 162213 bytes).
+ 39i,9n,25p,335b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on ECE742Project.pdf (7 pages, 219208 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
