@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 
 \title{ECE 742 Final Project}
 \author{
@@ -159,7 +161,7 @@ This leaves us with one equation to find an update quation for  $D_{z}$:
 \end{equation}
 
 
-Using semi-implicit (???)
+Using semi-implicit definition
 
 \begin{equation}D^{n+1/2}=\frac{D^{n+1}+D^{n}}{2}\end{equation}
 
@@ -225,23 +227,29 @@ This equation discretizes to:
    \epsilon(\frac{\partial}{\partial t}(\kappa_{y}E_{z})+\frac{\sigma_{y}}{\epsilon_{0}}E_{z})
  \end{equation}
 
- Discretize this to find update equation for D:
+ Discretize this to find update equation for E:
 
  \begin{equation}
 
  \end{equation}
  
- Similarly, we can find the B update equation to be:
+ Similarly, we can find the B update equations to be:
 
  \begin{equation}
 
  \end{equation}
+ \begin{equation}
 
- And we can find the H update equation to be:
+ \end{equation}
+
+ And we can find the H update equations to be:
 
  \begin{equation}
 
  \end{equation}
+ \begin{equation}
+
+ \end{equation} 
 
 \subsection{Code Implementation}
 \subsubsection{Update Equations}
@@ -253,9 +261,64 @@ This equation discretizes to:
    Ez
  \end{equation}
  \begin{equation}
-   CEX1=\frac{}{}
+   CBX1=\frac{2\epsilon_{0}\kappa_{y}-\sigma_{y}\Delta t}{2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CBX2=\frac{2\epsilon_{0}\Delta t}{2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CHX1=\frac{2\epsilon_{0}\kappa_{z}-\sigma_{z}\Delta t}{2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CHX2=\frac{1}{2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CHX3=2\epsilon_{0}\kappa_{x}+\sigma_{x}\Delta t
+ \end{equation}
+  \begin{equation}
+   CHX4=2\epsilon_{0}\kappa_{x}-\sigma_{x}\Delta t
  \end{equation}
 
+ \begin{equation}
+   CBY1=\frac{2\epsilon_{0}\kappa_{z}-\sigma_{z}\Delta t}{2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CBY2=\frac{2\epsilon_{0}\Delta t}{2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CHY1=\frac{2\epsilon_{0}\kappa_{x}-\sigma_{x}\Delta t}{2\epsilon_{0}\kappa_{x}+\sigma_{x}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CHY2=\frac{1}{2\epsilon_{0}\kappa_{x}+\sigma_{x}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CHY3=2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t
+ \end{equation}
+  \begin{equation}
+   CHY4=2\epsilon_{0}\kappa_{y}-\sigma_{y}\Delta t
+ \end{equation}
+  \begin{equation}
+   CDZ1=\frac{2\epsilon_{0}\kappa_{x}-\sigma_{x}\Delta t}{2\epsilon_{0}\kappa_{x}+\sigma_{x}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CDZ2=\frac{2\epsilon_{0}\Delta t}{2\epsilon_{0}\kappa_{x}+\sigma_{x}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CEZ1=\frac{2\epsilon_{0}\kappa_{y}-\sigma_{y}\Delta t}{2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CEZ2=\frac{1}{2\epsilon_{0}\kappa_{y}+\sigma_{y}\Delta t}
+ \end{equation}
+ \begin{equation}
+   CEZ3=2\epsilon_{0}\kappa_{z}+\sigma_{z}\Delta t
+ \end{equation}
+  \begin{equation}
+   CEZ4=2\epsilon_{0}\kappa_{z}-\sigma_{z}\Delta t
+ \end{equation}
+
+ Some of these coefficients are identical, but we stored them separately for the
+ purpose of organization and readable naming scheme.
+ 
 \subsubsection{Graded PML}
 The purpose of PML is to have the wave decay as the wave enters the PML, and a
 nonzero conductivity value will achieve this decay. However, a large discrepancy
@@ -286,17 +349,28 @@ We will vary the values for $\kappa_{max}$ and $\sigma_{max}$ in our numerical
 experiments to test how different PML material conditions affect the
 effectiveness of the PML.
 
+An optimal expression for the value of $\sigma_{max}$ for a polynomial grading
+has been found numerically to be:
+\begin{equation}
+\sigma_{x, optimal}=\frac{0.8(m+1)}{\eta_{0} \Delta x}
+\end{equation}
+
 \section{Experiment}
+
 
 
 \section{Error Analysis}
 In order to test how well the PML is working to absorb the incoming reflection,
-we will calculate the relative error with respect to the case of no boundary conditions
+we will calculate the relative error with respect to the case of no boundary
+conditions.
 
-PMLs are exact for continuous functions, but error is introduced for discrete
-functions. Having a large step discontinuity can
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{ErrorPlot1}
+     \caption{Plot of the difference of numerical solution with respect to analytical solution of the derivative of a gaussian waveform U evaluated at different timestep dx.}\label{fig:Error1}
+\end{figure}
 
-\section{Fix me: Bibliography}
-Susan's book - third edition
+\section{Bibliography}
+Followed Beringer's Derivation in Susan's book - third edition
 
 \end{document}

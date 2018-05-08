@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=prv_ECE742Project 2018.5.5)  5 MAY 2018 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=prv_ECE742Project 2018.5.5)  7 MAY 2018 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -121,23 +121,23 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \Gin@req@height=\dimen125
 \Gin@req@width=\dimen126
-)  !name(ECE742Project.tex) !offset(208) 
+)  !name(ECE742Project.tex) !offset(331) 
 ! Preview: Snippet 1 started.
 <-><->
       
-l.15  \begin{equation}
-                      
+l.15 \begin{equation}
+                     
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(1446315+0x22609920).
+! Preview: Snippet 1 ended.(1511852+0x22609920).
 <-><->
       
-l.18  \end{equation}
-                    
+l.17 \end{equation}
+                   
 Not a real error.
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]  !name(ECE742Project.tex) !offset(264)  ) 
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]  !name(ECE742Project.tex) !offset(343)  ) 
 Here is how much of TeX's memory you used:
  1402 strings out of 491578
  21328 string characters out of 6112886
@@ -147,7 +147,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  53i,3n,30p,274b,99s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on _region_.pdf (1 page, 32199 bytes).
+Output written on _region_.pdf (1 page, 34540 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

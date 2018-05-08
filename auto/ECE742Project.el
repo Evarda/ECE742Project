@@ -6,10 +6,12 @@
     "article"
     "art10"
     "amsmath"
-    "mathtools")
+    "mathtools"
+    "graphicx")
    (LaTeX-add-labels
     "SyEquation"
     "SzEquation"
-    "DzEzRelation"))
+    "DzEzRelation"
+    "fig:Error1"))
  :latex)
 
