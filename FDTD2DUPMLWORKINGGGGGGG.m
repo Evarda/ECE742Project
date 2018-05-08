@@ -34,7 +34,7 @@ sigmaz(1:maxLength)=0;
 
 %Polynomial Grading
 m=3;
-sigmamax=1e3;
+sigmamax=1;
 % sigmamax=0.8*(m+1)/(sqrt(mu0/ep0)*dx);
 kmax=1;
 for i=1:boundsize
@@ -109,7 +109,7 @@ end
 % Max Timesteps
 nmax = 300;
 
-Error(17, nmax)=0;
+% Error(17, nmax)=0;
 
 % Initialize figure
 figure
@@ -138,9 +138,9 @@ for n = 1:nmax
             Ez(i,j)=CEZ1(j)*Ez(i,j)+CEZ2(j)*(CEZ3(1)*Dz(i,j)-CEZ4(1)*Dz_old)/ep;
             
             % Calculate Error
-            if (maxLength-boundsize>i)&&(i>boundsize) && (maxLength-boundsize>j)&&(j>boundsize)
-            Error(17,n)=Error(17,n)+Ez(i,j);
-            end
+%             if (maxLength-boundsize>i)&&(i>boundsize) && (maxLength-boundsize>j)&&(j>boundsize)
+%             Error(17,n)=Error(17,n)+Ez(i,j);
+%             end
         end
     end
     
@@ -169,6 +169,7 @@ for n = 1:nmax
     yticks(jarray(10:10:maxLength,1))
     yticklabels(dy*jarray(10:10:maxLength,1))
     zlabel('E')
+    grid on
     
     % Contour Plot
     subplot(2,1,2)
@@ -180,6 +181,7 @@ for n = 1:nmax
     yticks(jarray(10:10:maxLength,1))
     yticklabels(dy*jarray(10:10:maxLength,1))
     zlabel('E')
+    grid on
     M=getframe;
     
 end
