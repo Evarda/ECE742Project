@@ -1,6 +1,8 @@
 \message{ !name(ECE742Project.tex)}\documentclass{article}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 
 \title{ECE 742 Final Project}
 \author{
@@ -11,10 +13,13 @@
 
 \begin{document}
 
-\message{ !name(ECE742Project.tex) !offset(331) }
-\begin{equation}
-\sigma_{x, optimal}=\frac{0.8(m+1)}{\eta_{0} \Delta x}
-\end{equation}
-\message{ !name(ECE742Project.tex) !offset(343) }
+\message{ !name(ECE742Project.tex) !offset(230) }
+ \begin{equation}
+ H_{x}^{n+1}(i,j) = CHX1  H_{x}^{n}(i,j) + CHX2  (CHX3 B_{x}^{n+1}(i,j)-CHX4 B_{x}^{n}(i,j))/\mu
+ \end{equation}
+ \begin{equation}
+ H_{y}^{n+1}(i,j) = CHY1  H_{y}^{n}(i,j) + CHY2  (CHY3 B_{y}^{n+1}(i,j)-CHY4 B_{y}^{n}(i,j))/\mu
+ \end{equation} 
+\message{ !name(ECE742Project.tex) !offset(351) }
 
 \end{document}
