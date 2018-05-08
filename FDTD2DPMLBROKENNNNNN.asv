@@ -34,7 +34,7 @@ sigmaz(1:maxLength)=0;
 
 %Polynomial Grading
 m=3;
-sigmamax=1e3;
+sigmamax=1e2;
 % sigmamax=0.8*(m+1)/(sqrt(mu0/ep0)*dx);
 kmax=1;
 for i=1:boundsize
@@ -109,7 +109,7 @@ end
 % Max Timesteps
 nmax = 300;
 
-Error(17, nmax)=0;
+Error(15, nmax)=0;
 
 % Initialize figure
 figure
@@ -139,7 +139,7 @@ for n = 1:nmax
             
             % Calculate Error
             if (maxLength-boundsize>i)&&(i>boundsize) && (maxLength-boundsize>j)&&(j>boundsize)
-            Error(17,n)=Error(17,n)+Ez(i,j);
+            Error(15,n)=Error(15,n)+Ez(i,j);
             end
         end
     end
