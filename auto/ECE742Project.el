@@ -12,8 +12,11 @@
     "SyEquation"
     "SzEquation"
     "DzEzRelation"
+    "fig:GaussianPulse"
+    "fig:GaussianPropegation"
+    "fig:GaussianBoundary"
+    "fig:GaussianReflection"
     "fig:RelErrSigmaxm3"
-    "fig:RelErrm"
-    "fig:RelErrSigmax"))
+    "fig:RelErrm"))
  :latex)
 

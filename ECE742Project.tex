@@ -356,14 +356,48 @@ has been found numerically to be:
 \end{equation}
 
 \section{Experiment}
-Each E and H componenet within the UPML is computed using a two-step 
 
+We will test the effectiveness of our PML implementation by launching a gaussian
+pulse at the center of our free-space simulation. The peak of the
+gaussian will be at the 10th timestep, and the width of the gaussian is at the
+5th. Our total simulation size is size 100 by 100 with a PML boundary layer of size
+20. We ran all simulations over a maximum timestep size of 300.
 
-We varied values of sig this tells us _____
+Figures \ref{fig:GaussianPulse}, \ref{fig:GaussianPropegation},
+\ref{fig:GaussianBoundary}, and \ref{fig:GaussianReflection} show the initial
+pulse, the initial propegation of the wave, the wave hitting the
+PML, and the dissipation of the field after it hits the PML. These figures were
+generated for the conditions of m=3, $\sigma_{max}$=1, and $\kappa_{max}$=1.
 
-We varied ____ this tells us ____
+\begin{figure}
+  \centering
+  \includegraphics[width=200]{GaussianPulse}
+  \caption{Formation of the Gaussian Pulse}\label{fig:GaussianPulse}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=200]{GaussianPropegation}
+  \caption{Propegation of the Gaussian Pulse}\label{fig:GaussianPropegation}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=200]{GaussianBoundary}
+  \caption{Nonzero field values interacting with PML layer}\label{fig:GaussianBoundary}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=200]{GaussianReflection}
+  \caption{Absorption of Field by PML}\label{fig:GaussianReflection}
+\end{figure}
 
-We varied _____ this tells us _____
+We varied values of $\sigma_{max}$, maximum value for the conductivity, in
+experiment. Varying $\sigma_{max}$ will change the properties of the PML and how
+it absorbs or reflects. Too high of sigma will result in reflections from the
+PML layer. Too small of sigma, and the wave fails to be absorbed by the PML layer.
+
+We varied the value of m, a parameter in the polynomial grading. Varying values
+of m changes the steepness of the grading and will affect the amount of
+reflection from the PML layer. 
 
 
 \section{Error Analysis}
@@ -372,29 +406,39 @@ we will calculate the relative error with respect to the case of no boundary
 conditions. Error values were calculated for the amount of the wave within the
 simulation region, not including the wave present in the PML.  
 
+Our figures show values of relative error with respect to timstep. The initial
+low to high increase in each plot at early timstep is when the generated wave is
+propegating in free space. The first peak is a result of the entire wave being
+inside the simualtion. After the wave hits the boundary layer, the total
+decreases, and the wave is absorbed by the boundary layer. If we look in figure
+\ref{fig:RelErrm}, we can see that the relative error is decreasing for
+all valus of m, but appears to be lowest for m=1, 2, and 3 respectively. This is
+to be expected because our textbook claimed m=2,3 were optimal values.
+
+In figure \ref{fig:RelErrSigmaxm3}, the lowest amount of error we have are for
+$\sigma_{max}$ are for the cases of$ 10^0$ and $ 10^1$ (also $10^2$). This is the middle range of
+conductivity, and we could see as higher levels of conducivity, we had a lot of
+reflection, and for lower levels of conductivity, not much of the field was absorbed.
+
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{Rel_Err_SigMax_m3}
+  \includegraphics[width=400]{Rel_Err_SigMax_m3}
   \caption{Plot of Relative Error with respect to time for values of
-    \sigma_{max} of 10^{-1}, 10^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}\label{fig:RelErrSigmaxm3}
+    $\sigma_{max}$ of $10^{-1}, 10^0, 10^1, 10^2, 10^3$, m=3, $\kappa{max}=3$}\label{fig:RelErrSigmaxm3}
 \end{figure}
 
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{Rel_Err_m}
+  \includegraphics[width=400]{Rel_Err_m}
   \caption{Plot of Relative Error with respect to time for values of m of 0, 1,
     2, 3, 4, 5}\label{fig:RelErrm}
 \end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\textwidth]{Rel_Err_SigMax}
-  \caption{Plot of Relative Error with respect to time for values of
-    \sigma_{max} of 10^{-1}, 10^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}\label{fig:RelErrSigmax}
-\end{figure}
 
-\section{Bibliography}
+
+
+\section{Resources}
 Followed Beringer's Derivation in Susan's book - third edition
 
 \end{document}
