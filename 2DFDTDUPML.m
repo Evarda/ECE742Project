@@ -161,6 +161,7 @@ for n = 1:nmax
     % Surface Plot
     subplot(2,1,1)
     surf(iarray, jarray, Ez);
+    title(['Time step: ',num2str(n),' s'])
     axis([1, maxLength, 1, maxLength, -1, 1])
     xlabel('x [m]')
     xticks(iarray(1,10:10:maxLength))
@@ -174,6 +175,7 @@ for n = 1:nmax
     % Contour Plot
     subplot(2,1,2)
     contour(iarray, jarray, Ez);
+    title(['Time step: ',num2str(n),' s'])
     xlabel('x [m]')
     xticks(iarray(1,10:10:maxLength))
     xticklabels(dx*iarray(1,10:10:maxLength))
