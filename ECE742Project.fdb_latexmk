@@ -1,5 +1,9 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["pdflatex"] 1525813071 "ECE742Project.tex" "ECE742Project.pdf" "ECE742Project" 1525813071
+=======
+["pdflatex"] 1525814172 "ECE742Project.tex" "ECE742Project.pdf" "ECE742Project" 1525814172
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -63,8 +67,13 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+<<<<<<< HEAD
   "ECE742Project.aux" 1525812951 1027 2f8cfe62e691190ef17f6468cb1cdba6 ""
   "ECE742Project.tex" 1525813071 13942 ead10832c934460146aefcfe819253f6 ""
+=======
+  "ECE742Project.aux" 1525813882 1412 d918d3ddb33b0f12859b5834accdbdc5 ""
+  "ECE742Project.tex" 1525814170 14556 533ce2012cac1fffba14512c74d7ffbb ""
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
   "images/Rel_Err_SigMax.eps" 1525809125 84067 c86cde8f37d4c397bc65f41c9124e8a6 ""
   "images/Rel_Err_SigMax_m3.eps" 1525809125 84540 548073b002b00a0aaf3915579d57691e ""
   "images/Rel_Err_m.eps" 1525809125 85881 9ef6a3fcd43adda4411da5000b731bea ""

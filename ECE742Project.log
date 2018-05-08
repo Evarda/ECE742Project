@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2018 15:57
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2018 16:16
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -740,6 +744,498 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--336
  []
 
 [5]
+<<<<<<< HEAD
+=======
+./ECE742Project.tex:362: Missing $ inserted.
+<inserted text> 
+                $
+l.362 We varied values of sig this tells us _
+                                             ____
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:362: Missing { inserted.
+<to be read again> 
+                   _
+l.362 We varied values of sig this tells us __
+                                              ___
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:362: Missing { inserted.
+<to be read again> 
+                   _
+l.362 We varied values of sig this tells us ___
+                                               __
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:362: Missing { inserted.
+<to be read again> 
+                   _
+l.362 We varied values of sig this tells us ____
+                                                _
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:362: Missing { inserted.
+<to be read again> 
+                   _
+l.362 We varied values of sig this tells us _____
+                                                 
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:363: Missing { inserted.
+<to be read again> 
+                   \par 
+l.363 
+      
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:363: Missing $ inserted.
+<inserted text> 
+                $
+l.363 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:363: Missing } inserted.
+<inserted text> 
+                }
+l.363 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:363: Missing } inserted.
+<inserted text> 
+                }
+l.363 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:363: Missing } inserted.
+<inserted text> 
+                }
+l.363 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:363: Missing } inserted.
+<inserted text> 
+                }
+l.363 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:363: Missing } inserted.
+<inserted text> 
+                }
+l.363 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:364: Missing $ inserted.
+<inserted text> 
+                $
+l.364 We varied _
+                 ___ this tells us ____
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:364: Missing { inserted.
+<to be read again> 
+                   _
+l.364 We varied __
+                  __ this tells us ____
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:364: Missing { inserted.
+<to be read again> 
+                   _
+l.364 We varied ___
+                   _ this tells us ____
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:364: Missing { inserted.
+<to be read again> 
+                   _
+l.364 We varied ____
+                     this tells us ____
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:364: Missing { inserted.
+<to be read again> 
+                   _
+l.364 We varied ____ this tells us __
+                                     __
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:364: Missing { inserted.
+<to be read again> 
+                   _
+l.364 We varied ____ this tells us ___
+                                      _
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:364: Missing { inserted.
+<to be read again> 
+                   _
+l.364 We varied ____ this tells us ____
+                                       
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:365: Missing { inserted.
+<to be read again> 
+                   \par 
+l.365 
+      
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:365: Missing $ inserted.
+<inserted text> 
+                $
+l.365 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:365: Missing } inserted.
+<inserted text> 
+                }
+l.365 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:365: Missing } inserted.
+<inserted text> 
+                }
+l.365 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:365: Missing } inserted.
+<inserted text> 
+                }
+l.365 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:365: Missing } inserted.
+<inserted text> 
+                }
+l.365 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:365: Missing } inserted.
+<inserted text> 
+                }
+l.365 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:365: Missing } inserted.
+<inserted text> 
+                }
+l.365 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:365: Missing } inserted.
+<inserted text> 
+                }
+l.365 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:366: Missing $ inserted.
+<inserted text> 
+                $
+l.366 We varied _
+                 ____ this tells us _____
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:366: Missing { inserted.
+<to be read again> 
+                   _
+l.366 We varied __
+                  ___ this tells us _____
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:366: Missing { inserted.
+<to be read again> 
+                   _
+l.366 We varied ___
+                   __ this tells us _____
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:366: Missing { inserted.
+<to be read again> 
+                   _
+l.366 We varied ____
+                    _ this tells us _____
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:366: Missing { inserted.
+<to be read again> 
+                   _
+l.366 We varied _____
+                      this tells us _____
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:366: Missing { inserted.
+<to be read again> 
+                   _
+l.366 We varied _____ this tells us __
+                                      ___
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:366: Missing { inserted.
+<to be read again> 
+                   _
+l.366 We varied _____ this tells us ___
+                                       __
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:366: Missing { inserted.
+<to be read again> 
+                   _
+l.366 We varied _____ this tells us ____
+                                        _
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:366: Missing { inserted.
+<to be read again> 
+                   _
+l.366 We varied _____ this tells us _____
+                                         
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:367: Missing { inserted.
+<to be read again> 
+                   \par 
+l.367 
+      
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./ECE742Project.tex:367: Missing $ inserted.
+<inserted text> 
+                $
+l.367 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./ECE742Project.tex:367: Missing } inserted.
+<inserted text> 
+                }
+l.367 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 Package epstopdf Info: Source file: <images/Rel_Err_SigMax_m3.eps>
 (epstopdf)                    date: 2018-05-08 14:52:05
 (epstopdf)                    size: 84540 bytes
@@ -749,16 +1245,65 @@ pdf>
 (epstopdf)                    size: 22705 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_SigMax_m3-e
 ps-converted-to.pdf images/Rel_Err_SigMax_m3.eps>
+<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 369.
 Package epstopdf Info: Output file is already uptodate.
 
+=======
+(epstopdf)             \includegraphics on input line 377.
+Package epstopdf Info: Output file is already uptodate.
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 <images/Rel_Err_SigMax_m3-eps-converted-to.pdf, id=32, 1445.4pt x 815.045pt>
 File: images/Rel_Err_SigMax_m3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Rel_Err_SigMax_m3-eps-converted-to.pdf>
 Package pdftex.def Info: images/Rel_Err_SigMax_m3-eps-converted-to.pdf used on 
+<<<<<<< HEAD
 input line 369.
 (pdftex.def)             Requested size: 345.0pt x 194.5328pt.
+=======
+input line 377.
+(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
+
+./ECE742Project.tex:379: Missing $ inserted.
+<inserted text> 
+                $
+l.379 ...^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}
+                                                  \label{fig:RelErrSigmaxm3}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:379: Extra }, or forgotten $.
+\sbox ...hbox {\color@setgroup #2\color@endgroup }
+                                                  
+l.379 ...^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}
+                                                  \label{fig:RelErrSigmaxm3}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./ECE742Project.tex:379: Missing $ inserted.
+<inserted text> 
+                $
+l.379 ...^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}
+                                                  \label{fig:RelErrSigmaxm3}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:379: Missing } inserted.
+<inserted text> 
+                }
+l.379 ...^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}
+                                                  \label{fig:RelErrSigmaxm3}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 Package epstopdf Info: Source file: <images/Rel_Err_m.eps>
 (epstopdf)                    date: 2018-05-08 14:52:05
 (epstopdf)                    size: 85881 bytes
@@ -767,15 +1312,24 @@ Package epstopdf Info: Source file: <images/Rel_Err_m.eps>
 (epstopdf)                    size: 21301 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_m-eps-conve
 rted-to.pdf images/Rel_Err_m.eps>
+<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 375.
 Package epstopdf Info: Output file is already uptodate.
 
+=======
+(epstopdf)             \includegraphics on input line 385.
+Package epstopdf Info: Output file is already uptodate.
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 <images/Rel_Err_m-eps-converted-to.pdf, id=33, 1445.4pt x 815.045pt>
 File: images/Rel_Err_m-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Rel_Err_m-eps-converted-to.pdf>
 Package pdftex.def Info: images/Rel_Err_m-eps-converted-to.pdf used on input li
+<<<<<<< HEAD
 ne 375.
+=======
+ne 385.
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 (pdftex.def)             Requested size: 345.0pt x 194.5328pt.
 Package epstopdf Info: Source file: <images/Rel_Err_SigMax.eps>
 (epstopdf)                    date: 2018-05-08 14:52:05
@@ -786,7 +1340,11 @@ Package epstopdf Info: Source file: <images/Rel_Err_SigMax.eps>
 (epstopdf)                    size: 22547 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_SigMax-eps-
 converted-to.pdf images/Rel_Err_SigMax.eps>
+<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 381.
+=======
+(epstopdf)             \includegraphics on input line 392.
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 Package epstopdf Info: Output file is already uptodate.
 
 <images/Rel_Err_SigMax-eps-converted-to.pdf, id=34, 1445.4pt x 815.045pt>
@@ -794,6 +1352,7 @@ File: images/Rel_Err_SigMax-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Rel_Err_SigMax-eps-converted-to.pdf>
 Package pdftex.def Info: images/Rel_Err_SigMax-eps-converted-to.pdf used on inp
+<<<<<<< HEAD
 ut line 381.
 (pdftex.def)             Requested size: 345.0pt x 194.5328pt.
  [6 <./images/Rel_Err_SigMax_m3-eps-converted-to.pdf>] [7 <./images/Rel_Err_m-e
@@ -826,6 +1385,76 @@ texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 Output written on ECE742Project.pdf (7 pages, 219208 bytes).
+=======
+ut line 392.
+(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
+
+./ECE742Project.tex:394: Missing $ inserted.
+<inserted text> 
+                $
+l.394 ...^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}
+                                                  \label{fig:RelErrSigmax}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:394: Extra }, or forgotten $.
+\sbox ...hbox {\color@setgroup #2\color@endgroup }
+                                                  
+l.394 ...^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}
+                                                  \label{fig:RelErrSigmax}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./ECE742Project.tex:394: Missing $ inserted.
+<inserted text> 
+                $
+l.394 ...^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}
+                                                  \label{fig:RelErrSigmax}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./ECE742Project.tex:394: Missing } inserted.
+<inserted text> 
+                }
+l.394 ...^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}
+                                                  \label{fig:RelErrSigmax}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[6 <./images/Rel_Err_SigMax_m3-eps-converted-to.pdf>] [7 <./images/Rel_Err_m-ep
+s-converted-to.pdf> <./images/Rel_Err_SigMax-eps-converted-to.pdf>]
+(./ECE742Project.aux) ) 
+Here is how much of TeX's memory you used:
+ 2682 strings out of 492995
+ 38885 string characters out of 6132704
+ 115917 words of memory out of 5000000
+ 6199 multiletter control sequences out of 15000+600000
+ 9023 words of font info for 33 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,10n,25p,335b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
+onts/cmextra/cmex7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb>
+Output written on ECE742Project.pdf (7 pages, 220661 bytes).
+>>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
