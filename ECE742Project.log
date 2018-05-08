@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2018 15:57
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2018 16:16
->>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2018 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -744,720 +740,299 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--336
  []
 
 [5]
-<<<<<<< HEAD
-=======
-./ECE742Project.tex:362: Missing $ inserted.
-<inserted text> 
-                $
-l.362 We varied values of sig this tells us _
-                                             ____
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Package epstopdf Info: Source file: <images/GaussianPulse.eps>
+(epstopdf)                    date: 2018-05-08 16:29:45
+(epstopdf)                    size: 3137874 bytes
+(epstopdf)             Output file: <images/GaussianPulse-eps-converted-to.pdf>
 
-./ECE742Project.tex:362: Missing { inserted.
+(epstopdf)                    date: 2018-05-08 16:34:34
+(epstopdf)                    size: 254931 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/GaussianPulse-eps-c
+onverted-to.pdf images/GaussianPulse.eps>
+(epstopdf)             \includegraphics on input line 374.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/GaussianPulse-eps-converted-to.pdf, id=32, 422.57875pt x 809.0225pt>
+./ECE742Project.tex:374: Illegal unit of measure (pt inserted).
 <to be read again> 
-                   _
-l.362 We varied values of sig this tells us __
-                                              ___
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   !
+l.374   \includegraphics[width=200]{GaussianPulse}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-./ECE742Project.tex:362: Missing { inserted.
+./ECE742Project.tex:374: Illegal unit of measure (pt inserted).
 <to be read again> 
-                   _
-l.362 We varied values of sig this tells us ___
-                                               __
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   !
+l.374   \includegraphics[width=200]{GaussianPulse}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-./ECE742Project.tex:362: Missing { inserted.
+File: images/GaussianPulse-eps-converted-to.pdf Graphic file (type pdf)
+<use images/GaussianPulse-eps-converted-to.pdf>
+Package pdftex.def Info: images/GaussianPulse-eps-converted-to.pdf used on inpu
+t line 374.
+(pdftex.def)             Requested size: 200.0pt x 382.90709pt.
+Package epstopdf Info: Source file: <images/GaussianPropegation.eps>
+(epstopdf)                    date: 2018-05-08 16:29:45
+(epstopdf)                    size: 3276051 bytes
+(epstopdf)             Output file: <images/GaussianPropegation-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-05-08 17:03:53
+(epstopdf)                    size: 292574 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/GaussianPropegation
+-eps-converted-to.pdf images/GaussianPropegation.eps>
+(epstopdf)             \includegraphics on input line 379.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/GaussianPropegation-eps-converted-to.pdf, id=33, 421.575pt x 809.0225pt
+>
+./ECE742Project.tex:379: Illegal unit of measure (pt inserted).
 <to be read again> 
-                   _
-l.362 We varied values of sig this tells us ____
-                                                _
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   !
+l.379 ...egraphics[width=200]{GaussianPropegation}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-./ECE742Project.tex:362: Missing { inserted.
+./ECE742Project.tex:379: Illegal unit of measure (pt inserted).
 <to be read again> 
-                   _
-l.362 We varied values of sig this tells us _____
-                                                 
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   !
+l.379 ...egraphics[width=200]{GaussianPropegation}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-./ECE742Project.tex:363: Missing { inserted.
+File: images/GaussianPropegation-eps-converted-to.pdf Graphic file (type pdf)
+<use images/GaussianPropegation-eps-converted-to.pdf>
+Package pdftex.def Info: images/GaussianPropegation-eps-converted-to.pdf used o
+n input line 379.
+(pdftex.def)             Requested size: 200.0pt x 383.80824pt.
+Package epstopdf Info: Source file: <images/GaussianBoundary.eps>
+(epstopdf)                    date: 2018-05-08 16:29:45
+(epstopdf)                    size: 3269362 bytes
+(epstopdf)             Output file: <images/GaussianBoundary-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-05-08 16:34:35
+(epstopdf)                    size: 293892 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/GaussianBoundary-ep
+s-converted-to.pdf images/GaussianBoundary.eps>
+(epstopdf)             \includegraphics on input line 384.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/GaussianBoundary-eps-converted-to.pdf, id=34, 421.575pt x 809.0225pt>
+./ECE742Project.tex:384: Illegal unit of measure (pt inserted).
 <to be read again> 
-                   \par 
-l.363 
-      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   !
+l.384 ...ludegraphics[width=200]{GaussianBoundary}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-./ECE742Project.tex:363: Missing $ inserted.
-<inserted text> 
-                $
-l.363 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:363: Missing } inserted.
-<inserted text> 
-                }
-l.363 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:363: Missing } inserted.
-<inserted text> 
-                }
-l.363 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:363: Missing } inserted.
-<inserted text> 
-                }
-l.363 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:363: Missing } inserted.
-<inserted text> 
-                }
-l.363 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:363: Missing } inserted.
-<inserted text> 
-                }
-l.363 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:364: Missing $ inserted.
-<inserted text> 
-                $
-l.364 We varied _
-                 ___ this tells us ____
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:364: Missing { inserted.
+./ECE742Project.tex:384: Illegal unit of measure (pt inserted).
 <to be read again> 
-                   _
-l.364 We varied __
-                  __ this tells us ____
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   !
+l.384 ...ludegraphics[width=200]{GaussianBoundary}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-./ECE742Project.tex:364: Missing { inserted.
+File: images/GaussianBoundary-eps-converted-to.pdf Graphic file (type pdf)
+<use images/GaussianBoundary-eps-converted-to.pdf>
+Package pdftex.def Info: images/GaussianBoundary-eps-converted-to.pdf used on i
+nput line 384.
+(pdftex.def)             Requested size: 200.0pt x 383.80824pt.
+Package epstopdf Info: Source file: <images/GaussianReflection.eps>
+(epstopdf)                    date: 2018-05-08 16:29:45
+(epstopdf)                    size: 3299493 bytes
+(epstopdf)             Output file: <images/GaussianReflection-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2018-05-08 16:34:35
+(epstopdf)                    size: 298361 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/GaussianReflection-
+eps-converted-to.pdf images/GaussianReflection.eps>
+(epstopdf)             \includegraphics on input line 389.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/GaussianReflection-eps-converted-to.pdf, id=35, 421.575pt x 809.0225pt>
+./ECE742Project.tex:389: Illegal unit of measure (pt inserted).
 <to be read again> 
-                   _
-l.364 We varied ___
-                   _ this tells us ____
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   !
+l.389 ...degraphics[width=200]{GaussianReflection}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-./ECE742Project.tex:364: Missing { inserted.
+./ECE742Project.tex:389: Illegal unit of measure (pt inserted).
 <to be read again> 
-                   _
-l.364 We varied ____
-                     this tells us ____
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   !
+l.389 ...degraphics[width=200]{GaussianReflection}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-./ECE742Project.tex:364: Missing { inserted.
-<to be read again> 
-                   _
-l.364 We varied ____ this tells us __
-                                     __
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:364: Missing { inserted.
-<to be read again> 
-                   _
-l.364 We varied ____ this tells us ___
-                                      _
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:364: Missing { inserted.
-<to be read again> 
-                   _
-l.364 We varied ____ this tells us ____
-                                       
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:365: Missing { inserted.
-<to be read again> 
-                   \par 
-l.365 
-      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:365: Missing $ inserted.
-<inserted text> 
-                $
-l.365 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:365: Missing } inserted.
-<inserted text> 
-                }
-l.365 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:365: Missing } inserted.
-<inserted text> 
-                }
-l.365 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:365: Missing } inserted.
-<inserted text> 
-                }
-l.365 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:365: Missing } inserted.
-<inserted text> 
-                }
-l.365 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:365: Missing } inserted.
-<inserted text> 
-                }
-l.365 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:365: Missing } inserted.
-<inserted text> 
-                }
-l.365 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:365: Missing } inserted.
-<inserted text> 
-                }
-l.365 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:366: Missing $ inserted.
-<inserted text> 
-                $
-l.366 We varied _
-                 ____ this tells us _____
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:366: Missing { inserted.
-<to be read again> 
-                   _
-l.366 We varied __
-                  ___ this tells us _____
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:366: Missing { inserted.
-<to be read again> 
-                   _
-l.366 We varied ___
-                   __ this tells us _____
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:366: Missing { inserted.
-<to be read again> 
-                   _
-l.366 We varied ____
-                    _ this tells us _____
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:366: Missing { inserted.
-<to be read again> 
-                   _
-l.366 We varied _____
-                      this tells us _____
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:366: Missing { inserted.
-<to be read again> 
-                   _
-l.366 We varied _____ this tells us __
-                                      ___
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:366: Missing { inserted.
-<to be read again> 
-                   _
-l.366 We varied _____ this tells us ___
-                                       __
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:366: Missing { inserted.
-<to be read again> 
-                   _
-l.366 We varied _____ this tells us ____
-                                        _
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:366: Missing { inserted.
-<to be read again> 
-                   _
-l.366 We varied _____ this tells us _____
-                                         
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:367: Missing { inserted.
-<to be read again> 
-                   \par 
-l.367 
-      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-./ECE742Project.tex:367: Missing $ inserted.
-<inserted text> 
-                $
-l.367 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./ECE742Project.tex:367: Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
->>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
+File: images/GaussianReflection-eps-converted-to.pdf Graphic file (type pdf)
+<use images/GaussianReflection-eps-converted-to.pdf>
+Package pdftex.def Info: images/GaussianReflection-eps-converted-to.pdf used on
+ input line 389.
+(pdftex.def)             Requested size: 200.0pt x 383.80824pt.
 Package epstopdf Info: Source file: <images/Rel_Err_SigMax_m3.eps>
 (epstopdf)                    date: 2018-05-08 14:52:05
 (epstopdf)                    size: 84540 bytes
 (epstopdf)             Output file: <images/Rel_Err_SigMax_m3-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2018-05-08 15:55:43
+(epstopdf)                    date: 2018-05-08 16:30:30
 (epstopdf)                    size: 22705 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_SigMax_m3-e
 ps-converted-to.pdf images/Rel_Err_SigMax_m3.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 369.
+(epstopdf)             \includegraphics on input line 425.
 Package epstopdf Info: Output file is already uptodate.
 
-=======
-(epstopdf)             \includegraphics on input line 377.
-Package epstopdf Info: Output file is already uptodate.
->>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
-<images/Rel_Err_SigMax_m3-eps-converted-to.pdf, id=32, 1445.4pt x 815.045pt>
+<images/Rel_Err_SigMax_m3-eps-converted-to.pdf, id=36, 1445.4pt x 815.045pt>
+./ECE742Project.tex:425: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.425 ...udegraphics[width=400]{Rel_Err_SigMax_m3}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./ECE742Project.tex:425: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.425 ...udegraphics[width=400]{Rel_Err_SigMax_m3}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 File: images/Rel_Err_SigMax_m3-eps-converted-to.pdf Graphic file (type pdf)
-
 <use images/Rel_Err_SigMax_m3-eps-converted-to.pdf>
 Package pdftex.def Info: images/Rel_Err_SigMax_m3-eps-converted-to.pdf used on 
-<<<<<<< HEAD
-input line 369.
-(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
-=======
-input line 377.
-(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
+input line 425.
+(pdftex.def)             Requested size: 400.0pt x 225.5496pt.
 
-./ECE742Project.tex:379: Missing $ inserted.
-<inserted text> 
-                $
-l.379 ...^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}
-                                                  \label{fig:RelErrSigmaxm3}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Overfull \hbox (55.0pt too wide) in paragraph at lines 425--427
+ [][] 
+ []
 
-./ECE742Project.tex:379: Extra }, or forgotten $.
-\sbox ...hbox {\color@setgroup #2\color@endgroup }
-                                                  
-l.379 ...^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}
-                                                  \label{fig:RelErrSigmaxm3}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./ECE742Project.tex:379: Missing $ inserted.
-<inserted text> 
-                $
-l.379 ...^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}
-                                                  \label{fig:RelErrSigmaxm3}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:379: Missing } inserted.
-<inserted text> 
-                }
-l.379 ...^0, 10^1, 10^2, 10^3, m=3, \kappa{max}=3}
-                                                  \label{fig:RelErrSigmaxm3}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
->>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
 Package epstopdf Info: Source file: <images/Rel_Err_m.eps>
 (epstopdf)                    date: 2018-05-08 14:52:05
 (epstopdf)                    size: 85881 bytes
 (epstopdf)             Output file: <images/Rel_Err_m-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 15:57:30
+(epstopdf)                    date: 2018-05-08 16:30:30
 (epstopdf)                    size: 21301 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_m-eps-conve
 rted-to.pdf images/Rel_Err_m.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 375.
+(epstopdf)             \includegraphics on input line 433.
 Package epstopdf Info: Output file is already uptodate.
+<images/Rel_Err_m-eps-converted-to.pdf, id=37, 1445.4pt x 815.045pt>
+./ECE742Project.tex:433: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.433   \includegraphics[width=400]{Rel_Err_m}
+                                              
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-=======
-(epstopdf)             \includegraphics on input line 385.
-Package epstopdf Info: Output file is already uptodate.
->>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
-<images/Rel_Err_m-eps-converted-to.pdf, id=33, 1445.4pt x 815.045pt>
+./ECE742Project.tex:433: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.433   \includegraphics[width=400]{Rel_Err_m}
+                                              
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 File: images/Rel_Err_m-eps-converted-to.pdf Graphic file (type pdf)
-
 <use images/Rel_Err_m-eps-converted-to.pdf>
 Package pdftex.def Info: images/Rel_Err_m-eps-converted-to.pdf used on input li
-<<<<<<< HEAD
-ne 375.
-=======
-ne 385.
->>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
-(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
-Package epstopdf Info: Source file: <images/Rel_Err_SigMax.eps>
-(epstopdf)                    date: 2018-05-08 14:52:05
-(epstopdf)                    size: 84067 bytes
-(epstopdf)             Output file: <images/Rel_Err_SigMax-eps-converted-to.pdf
->
-(epstopdf)                    date: 2018-05-08 15:57:31
-(epstopdf)                    size: 22547 bytes
-(epstopdf)             Command: <repstopdf --outfile=images/Rel_Err_SigMax-eps-
-converted-to.pdf images/Rel_Err_SigMax.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 381.
-=======
-(epstopdf)             \includegraphics on input line 392.
->>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
-Package epstopdf Info: Output file is already uptodate.
+ne 433.
+(pdftex.def)             Requested size: 400.0pt x 225.5496pt.
 
-<images/Rel_Err_SigMax-eps-converted-to.pdf, id=34, 1445.4pt x 815.045pt>
-File: images/Rel_Err_SigMax-eps-converted-to.pdf Graphic file (type pdf)
+Overfull \hbox (55.0pt too wide) in paragraph at lines 433--435
+ [][] 
+ []
 
-<use images/Rel_Err_SigMax-eps-converted-to.pdf>
-Package pdftex.def Info: images/Rel_Err_SigMax-eps-converted-to.pdf used on inp
-<<<<<<< HEAD
-ut line 381.
-(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
- [6 <./images/Rel_Err_SigMax_m3-eps-converted-to.pdf>] [7 <./images/Rel_Err_m-e
-ps-converted-to.pdf> <./images/Rel_Err_SigMax-eps-converted-to.pdf>] (./ECE742P
-roject.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[6] [7 <./images/GaussianPulse-eps-converted-to.pdf>] [8 <./images/GaussianProp
+egation-eps-converted-to.pdf>] [9 <./images/GaussianBoundary-eps-converted-to.p
+df>] [10 <./images/GaussianReflection-eps-converted-to.pdf>] [11 <./images/Rel_
+Err_SigMax_m3-eps-converted-to.pdf> <./images/Rel_Err_m-eps-converted-to.pdf>]
+[12] (./ECE742Project.aux) ) 
 Here is how much of TeX's memory you used:
- 2682 strings out of 492995
- 38885 string characters out of 6132704
- 115901 words of memory out of 5000000
- 6199 multiletter control sequences out of 15000+600000
+ 2700 strings out of 492995
+ 39622 string characters out of 6132704
+ 115944 words of memory out of 5000000
+ 6214 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,9n,25p,335b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on ECE742Project.pdf (7 pages, 219208 bytes).
-=======
-ut line 392.
-(pdftex.def)             Requested size: 345.0pt x 194.5328pt.
-
-./ECE742Project.tex:394: Missing $ inserted.
-<inserted text> 
-                $
-l.394 ...^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}
-                                                  \label{fig:RelErrSigmax}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:394: Extra }, or forgotten $.
-\sbox ...hbox {\color@setgroup #2\color@endgroup }
-                                                  
-l.394 ...^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}
-                                                  \label{fig:RelErrSigmax}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./ECE742Project.tex:394: Missing $ inserted.
-<inserted text> 
-                $
-l.394 ...^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}
-                                                  \label{fig:RelErrSigmax}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./ECE742Project.tex:394: Missing } inserted.
-<inserted text> 
-                }
-l.394 ...^0, 10^1, 10^2, 10^3, m=2, \kappa{max}=3}
-                                                  \label{fig:RelErrSigmax}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[6 <./images/Rel_Err_SigMax_m3-eps-converted-to.pdf>] [7 <./images/Rel_Err_m-ep
-s-converted-to.pdf> <./images/Rel_Err_SigMax-eps-converted-to.pdf>]
-(./ECE742Project.aux) ) 
-Here is how much of TeX's memory you used:
- 2682 strings out of 492995
- 38885 string characters out of 6132704
- 115917 words of memory out of 5000000
- 6199 multiletter control sequences out of 15000+600000
- 9023 words of font info for 33 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 39i,10n,25p,335b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
-onts/cmextra/cmex7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb>
-Output written on ECE742Project.pdf (7 pages, 220661 bytes).
->>>>>>> b2fc59823fdb9a5e11225e9daf54f8c8c9fc466f
+</usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb>
+Output written on ECE742Project.pdf (12 pages, 1332118 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
