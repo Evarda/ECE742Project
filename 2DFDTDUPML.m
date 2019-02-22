@@ -50,7 +50,7 @@ for i=1:boundsize
     ky(boundsize+1-i)=ky(maxLength-boundsize+i);
 end
 
-%% Declare Update Constant Arrays
+% Declare Update Constant Arrays
 
 % Constants to Update Hx
 CBX1(1:maxLength)=0;
